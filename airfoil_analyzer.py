@@ -9,12 +9,17 @@ import time
 
 def main():
     airfoils = {}
+    properties = []
     reynolds_number = 100000
     
     for airfoil in search_airfoils_by_geometry(5, 15, 0, 10):
-        airfoils[airfoil] = fetch_af_polar(airfoil, reynolds_number)
+        (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
+        airfoils[airfoil] = alphas, cl , cd, cm
+        properties.append([airfoil, clmax, ldmax])
         
+    print("Plotting airfoils. ----->")
     plot_polars(airfoils)
+    plot_pareto_frontier(properties)
 
 def fetch_af_polar(af_name, re_num):
     url = f"http://airfoiltools.com/polar/csv?polar=xf-{af_name}-il-{re_num}"
@@ -28,14 +33,20 @@ def fetch_af_polar(af_name, re_num):
         df.columns = df.columns.str.strip()        
     except requests.exceptions.RequestException as e:
         print(f"  -> ERROR: Failed to fetch {af_name}: {e}")
-        return None
+        return None, None, None, None, None
 
     alpha = df['Alpha'].to_numpy()
     cl = df['Cl'].to_numpy()
     cd = df['Cd'].to_numpy()
     cm = df['Cm'].to_numpy()
     
-    return alpha, cl, cd, cm
+    ld = cl / cd
+    cl_max = np.max(cl)
+    ld_max = np.max(ld)
+    alpha_stall = alpha[np.argmax(cl)]
+    alpha_ld_max = alpha[np.argmax(ld)]
+    
+    return (alpha, cl, cd, cm), [cl_max, ld_max]
 
 def search_airfoils_by_geometry(min_thick=2.0, max_thick=66.4, min_camber=0.0, max_camber=16.4, max_results=50):
     url = "http://airfoiltools.com/search/index"
@@ -134,6 +145,42 @@ def plot_polars(airfoil_data_dict):
     handles, labels = axs[0, 0].get_legend_handles_labels()
     axs[1, 2].legend(handles, labels, loc='center', fontsize=11, ncol=2)
     plt.tight_layout(rect=[0, 0, 1, 0.93], h_pad=3.0, w_pad=2.0)
+    plt.show()
+    
+def plot_pareto_frontier(airfoil_properties):
+    df = pd.DataFrame(airfoil_properties, columns=['Name', 'Cl_max', 'LD_max'])
+    df_sorted = df.sort_values(by=['LD_max', 'Cl_max'], ascending=[False, False]).reset_index(drop=True)
+    pareto_front = []
+    max_cl_seen = -np.inf
+    
+    for index, row in df_sorted.iterrows():
+        if row['Cl_max'] > max_cl_seen:
+            pareto_front.append(row)
+            max_cl_seen = row['Cl_max']
+            
+    pareto_df = pd.DataFrame(pareto_front)
+    plt.figure(figsize=(12, 8))
+    plt.scatter(df['LD_max'], df['Cl_max'], color='steelblue', alpha=0.5, s=50, label='Airfoils')
+    pareto_df = pareto_df.sort_values(by='LD_max') 
+    plt.plot(pareto_df['LD_max'], pareto_df['Cl_max'], color='crimson', marker='o', 
+             linestyle='-', linewidth=2, markersize=8, label='Pareto Front')
+    
+    for index, row in pareto_df.iterrows():
+        plt.annotate(
+            row['Name'], 
+            (row['LD_max'], row['Cl_max']), 
+            xytext=(8, 5),          # Offset the text slightly up and to the right
+            textcoords='offset points', 
+            fontsize=10, 
+            fontweight='bold',
+            color='darkred'
+        )
+
+    plt.title('Airfoil Pareto Front: Lift vs. Efficiency', fontsize=18, fontweight='bold')
+    plt.xlabel('Maximum L/D Ratio (Efficiency)', fontsize=14)
+    plt.ylabel('Maximum Lift Coefficient ($C_{l,max}$)', fontsize=14)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend(fontsize=12, loc='lower right')
     plt.show()
 
 if __name__ == "__main__":
