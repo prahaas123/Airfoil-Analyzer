@@ -5,12 +5,13 @@ import io
 import matplotlib.pyplot as plt
 from bs4 import BeautifulSoup
 import re
+import time
 
 def main():
     airfoils = {}
     reynolds_number = 100000
     
-    for airfoil in search_airfoils_by_geometry(10, 15, 10):
+    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10):
         airfoils[airfoil] = fetch_af_polar(airfoil, reynolds_number)
         
     plot_polars(airfoils)
@@ -36,40 +37,50 @@ def fetch_af_polar(af_name, re_num):
     
     return alpha, cl, cd, cm
 
-def search_airfoils_by_geometry(min_thick=2.0, max_thick=66.4, min_camber=0.0, max_camber=16.4):
+def search_airfoils_by_geometry(min_thick=2.0, max_thick=66.4, min_camber=0.0, max_camber=16.4, max_results=50):
     url = "http://airfoiltools.com/search/index"
-    payload = {
-        "MAirfoilSearchForm[textSearch]": "",
-        "MAirfoilSearchForm[maxThickness]": max_thick,
-        "MAirfoilSearchForm[minThickness]": min_thick,
-        "MAirfoilSearchForm[maxCamber]": max_camber,
-        "MAirfoilSearchForm[minCamber]": min_camber,
-        "MAirfoilSearchForm[grp]": "",
-        "MAirfoilSearchForm[sort]": 9, # Sorts by Max Cl/Cd at Re=50,000 (Perfect for Micro Class)
-        "yt0": "Search" 
-    }
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    airfoil_names = []
+    page_num = 1
     print(f"Searching database for Thickness: {min_thick}-{max_thick}% | Camber: {min_camber}-{max_camber}%...")
+    print(f"Targeting up to {max_results} airfoils.\n")
     
     try:
-        response = requests.get(url, params=payload, headers=headers, timeout=10)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, 'html.parser')
-        links = soup.find_all('a', href=re.compile(r'airfoil='))
-        
-        airfoil_names = []
-        for link in links:
-            href = link.get('href')
-            match = re.search(r'airfoil=([a-zA-Z0-9_\-]+)', href)
+        while len(airfoil_names) < max_results:
+            payload = {
+                "m[textSearch]": "",
+                "m[maxThickness]": max_thick,
+                "m[minThickness]": min_thick,
+                "m[maxCamber]": max_camber,
+                "m[minCamber]": min_camber,
+                "m[grp]": "",
+                "m[sort]": 9,
+                "m[page]": page_num # Increment this variable to turn the page
+            }
             
-            if match:
-                raw_name = match.group(1)
-                clean_name = raw_name.replace("-il", "")
-                if clean_name not in airfoil_names:
-                    airfoil_names.append(clean_name)
+            print(f"  -> Scraping page {page_num}...")
+            response = requests.get(url, params=payload, headers=headers, timeout=10)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, 'html.parser')
+            links = soup.find_all('a', href=re.compile(r'airfoil='))
+            
+            added_on_page = 0
+            for link in links:
+                if len(airfoil_names) >= max_results:
+                    return airfoil_names 
                     
-        print(f"  -> Found {len(airfoil_names)} matching airfoils.")
-        return airfoil_names
+                href = link.get('href')
+                match = re.search(r'airfoil=([a-zA-Z0-9_\-]+)', href)                
+                if match:
+                    clean_name = match.group(1).replace("-il", "")
+                    if clean_name not in airfoil_names:
+                        airfoil_names.append(clean_name)
+                        added_on_page += 1
+            
+            if added_on_page == 0:
+                return airfoil_names
+            page_num += 1
+            time.sleep(1) 
 
     except requests.exceptions.RequestException as e:
         print(f"  -> [ERROR] Failed to search database: {e}")
