@@ -48,7 +48,7 @@ def fetch_af_polar(af_name, re_num):
     
     return (alpha, cl, cd, cm), [cl_max, ld_max]
 
-def search_airfoils_by_geometry(min_thick=2.0, max_thick=66.4, min_camber=0.0, max_camber=16.4, max_results=50):
+def search_airfoils_by_geometry(min_thick=2.0, max_thick=66.4, min_camber=0.0, max_camber=16.4, max_results=200):
     url = "http://airfoiltools.com/search/index"
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
     airfoil_names = []
@@ -165,16 +165,27 @@ def plot_pareto_frontier(airfoil_properties):
     plt.plot(pareto_df['LD_max'], pareto_df['Cl_max'], color='crimson', marker='o', 
              linestyle='-', linewidth=2, markersize=8, label='Pareto Front')
     
-    for index, row in pareto_df.iterrows():
-        plt.annotate(
-            row['Name'], 
-            (row['LD_max'], row['Cl_max']), 
-            xytext=(8, 5),          # Offset the text slightly up and to the right
-            textcoords='offset points', 
-            fontsize=10, 
-            fontweight='bold',
-            color='darkred'
-        )
+    for index, row in df.iterrows():
+        if row['Name'] in pareto_df['Name'].values:
+            plt.annotate(
+                row['Name'], 
+                (row['LD_max'], row['Cl_max']), 
+                xytext=(8, 5),
+                textcoords='offset points', 
+                fontsize=11, 
+                fontweight='bold',
+                color='darkred'
+            )
+        else:
+            plt.annotate(
+                row['Name'], 
+                (row['LD_max'], row['Cl_max']), 
+                xytext=(5, 5),
+                textcoords='offset points', 
+                fontsize=6, 
+                alpha=0.6, 
+                color='black'
+            )
 
     plt.title('Airfoil Pareto Front: Lift vs. Efficiency', fontsize=18, fontweight='bold')
     plt.xlabel('Maximum L/D Ratio (Efficiency)', fontsize=14)
