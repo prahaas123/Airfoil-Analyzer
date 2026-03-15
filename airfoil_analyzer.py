@@ -12,7 +12,7 @@ def main():
     properties = []
     reynolds_number = 100000
     
-    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10):
+    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10, 15):
         (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
         airfoils[airfoil] = alphas, cl , cd, cm
         properties.append([airfoil, clmax, ldmax])
