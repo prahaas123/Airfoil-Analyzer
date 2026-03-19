@@ -12,10 +12,13 @@ def main():
     properties = []
     reynolds_number = 100000
     
-    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10, 15):
+    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10, 500):
         (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
         airfoils[airfoil] = alphas, cl , cd, cm
         properties.append([airfoil, clmax, ldmax])
+        
+    print("\nApplying Cm=0 lift filter...")
+    airfoils, properties = filter_positive_lift_at_zero_cm(airfoils, properties)
         
     print("Plotting airfoils. ----->")
     plot_polars(airfoils)
@@ -33,7 +36,7 @@ def fetch_af_polar(af_name, re_num):
         df.columns = df.columns.str.strip()        
     except requests.exceptions.RequestException as e:
         print(f"  -> ERROR: Failed to fetch {af_name}: {e}")
-        return None, None, None, None, None
+        return (None, None, None, None), (None, None)
 
     alpha = df['Alpha'].to_numpy()
     cl = df['Cl'].to_numpy()
@@ -193,6 +196,40 @@ def plot_pareto_frontier(airfoil_properties):
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.legend(fontsize=12, loc='lower right')
     plt.show()
+    
+def filter_positive_lift_at_zero_cm(airfoils: dict, properties: list):
+    passing_names = []
+
+    for name, (alpha, cl, cd, cm) in airfoils.items():
+        cl_at_zero_cm = _interpolate_cl_at_zero_cm(cl, cm)
+
+        if cl_at_zero_cm is None:
+            continue
+
+        if cl_at_zero_cm > 0.0:
+            passing_names.append(name)
+
+    passing_set        = set(passing_names)
+    filtered_airfoils  = {n: v for n, v in airfoils.items()   if n in passing_set}
+    filtered_properties = [row for row in properties           if row[0] in passing_set]
+
+    print(f"\n  {len(filtered_airfoils)} / {len(airfoils)} airfoils passed the Cm=0 lift filter.\n")
+    return filtered_airfoils, filtered_properties
+
+def _interpolate_cl_at_zero_cm(cl: np.ndarray, cm: np.ndarray):
+    try:
+        for i in range(len(cm) - 1):
+            cm0, cm1 = cm[i], cm[i + 1]
+
+            if cm0 == 0.0:
+                return float(cl[i])
+            if cm0 * cm1 < 0.0:                       # sign flip between i and i+1
+                t = cm0 / (cm0 - cm1)                 # interpolation parameter ∈ (0,1)
+                return float(cl[i] + t * (cl[i + 1] - cl[i]))
+    except:
+        None
+
+    return None
 
 if __name__ == "__main__":
     main()
