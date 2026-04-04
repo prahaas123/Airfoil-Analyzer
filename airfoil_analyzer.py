@@ -17,8 +17,11 @@ def main():
         airfoils[airfoil] = alphas, cl , cd, cm
         properties.append([airfoil, clmax, ldmax])
         
-    print("\nApplying Cm=0 lift filter...")
-    airfoils, properties = filter_positive_lift_at_zero_cm(airfoils, properties)
+    print("\nApplying moment filter...")
+    airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.15, 0.15)
+    
+    print("\nFetching top 30 airfoils...")
+    airfoils, properties = filter_top_clmax(airfoils, properties)
         
     print("Plotting airfoils. ----->")
     plot_polars(airfoils)
@@ -189,40 +192,29 @@ def plot_pareto_frontier(airfoil_properties):
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.legend(fontsize=12, loc='lower right')
     plt.show()
+    
+def filter_cm_at_alpha(airfoils, properties, target_alpha, min_cm, max_cm):
+    passing_names = set()
+    for name, (alphas, cl, cd, cm) in airfoils.items():
+        cm_at_target = np.interp(target_alpha, alphas, cm)
+        if min_cm <= cm_at_target <= max_cm:
+            passing_names.add(name)
 
-def filter_positive_lift_at_zero_cm(airfoils: dict, properties: list):
-    passing_names = []
+    filtered_airfoils = {n: v for n, v in airfoils.items() if n in passing_names}
+    filtered_properties = [row for row in properties if row[0] in passing_names]
 
-    for name, (alpha, cl, cd, cm) in airfoils.items():
-        cl_at_zero_cm = _interpolate_cl_at_zero_cm(cl, cm)
+    print(f"\n  -> {len(filtered_airfoils)} / {len(airfoils)} airfoils passed the Cm filter "
+          f"({min_cm} <= Cm <= {max_cm} at alpha={target_alpha}°).")
 
-        if cl_at_zero_cm is None:
-            continue
-
-        if cl_at_zero_cm > 0.0:
-            passing_names.append(name)
-
-    passing_set        = set(passing_names)
-    filtered_airfoils  = {n: v for n, v in airfoils.items()   if n in passing_set}
-    filtered_properties = [row for row in properties           if row[0] in passing_set]
-
-    print(f"\n  {len(filtered_airfoils)} / {len(airfoils)} airfoils passed the Cm=0 lift filter.\n")
     return filtered_airfoils, filtered_properties
 
-def _interpolate_cl_at_zero_cm(cl: np.ndarray, cm: np.ndarray):
-    try:
-        for i in range(len(cm) - 1):
-            cm0, cm1 = cm[i], cm[i + 1]
-
-            if cm0 == 0.0:
-                return float(cl[i])
-            if cm0 * cm1 < 0.0:                       # sign flip between i and i+1
-                t = cm0 / (cm0 - cm1)                 # interpolation parameter ∈ (0,1)
-                return float(cl[i] + t * (cl[i + 1] - cl[i]))
-    except:
-        None
-
-    return None
+def filter_top_clmax(airfoils, properties, top_n= 30):
+    sorted_properties = sorted(properties, key=lambda x: x[1], reverse=True)
+    top_properties = sorted_properties[:top_n]
+    top_names = {prop[0] for prop in top_properties}
+    filtered_airfoils = {name: data for name, data in airfoils.items() if name in top_names}
+    print(f"\n  -> Filtered down to the top {len(filtered_airfoils)} airfoils by Cl_max.")
+    return filtered_airfoils, top_properties
 
 if __name__ == "__main__":
     main()
