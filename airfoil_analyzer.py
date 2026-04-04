@@ -1,18 +1,18 @@
 import pandas as pd
 import numpy as np
-import requests
-import io
+import os
+import json
+import neuralfoil as nf
+import aerosandbox as asb
 import matplotlib.pyplot as plt
-from bs4 import BeautifulSoup
-import re
-import time
+from matplotlib.widgets import CheckButtons
 
 def main():
     airfoils = {}
     properties = []
     reynolds_number = 100000
     
-    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10, 500):
+    for airfoil in search_airfoils_by_geometry(10, 15, 0, 8):
         (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
         airfoils[airfoil] = alphas, cl , cd, cm
         properties.append([airfoil, clmax, ldmax])
@@ -25,130 +25,123 @@ def main():
     plot_pareto_frontier(properties)
 
 def fetch_af_polar(af_name, re_num):
-    url = f"http://airfoiltools.com/polar/csv?polar=xf-{af_name}-il-{re_num}"
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-
+    print(f"  -> COMPUTING: {af_name} at Re={re_num} using NeuralFoil...")
+    alphas = np.linspace(-5, 15, 101)
     try:
-        print(f"  -> FETCHING: {af_name} at Re={re_num} from AirfoilTools...")
-        response = requests.get(url, headers=headers, timeout=10)
-        response.raise_for_status()
-        df = pd.read_csv(io.StringIO(response.text), skiprows=10)
-        df.columns = df.columns.str.strip()        
-    except requests.exceptions.RequestException as e:
-        print(f"  -> ERROR: Failed to fetch {af_name}: {e}")
+        aero = nf.get_aero_from_airfoil(
+            airfoil=asb.Airfoil(name=af_name),
+            alpha=alphas,
+            Re=re_num
+        )
+        
+        cl = aero['CL']
+        cd = aero['CD']
+        cm = aero['CM']
+        
+    except Exception as e:
+        print(f"  -> ERROR: Failed to compute {af_name} with NeuralFoil: {e}")
         return (None, None, None, None), (None, None)
 
-    alpha = df['Alpha'].to_numpy()
-    cl = df['Cl'].to_numpy()
-    cd = df['Cd'].to_numpy()
-    cm = df['Cm'].to_numpy()
-    
     ld = cl / cd
     cl_max = np.max(cl)
     ld_max = np.max(ld)
-    alpha_stall = alpha[np.argmax(cl)]
-    alpha_ld_max = alpha[np.argmax(ld)]
     
-    return (alpha, cl, cd, cm), [cl_max, ld_max]
+    alpha_stall = alphas[np.argmax(cl)]
+    alpha_ld_max = alphas[np.argmax(ld)]
+    
+    return (alphas, cl, cd, cm), [cl_max, ld_max]
 
-def search_airfoils_by_geometry(min_thick=2.0, max_thick=66.4, min_camber=0.0, max_camber=16.4, max_results=200):
-    url = "http://airfoiltools.com/search/index"
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+def search_airfoils_by_geometry(min_thick=0.0, max_thick=66.4, min_camber=0.0, max_camber=16.4, json_filename="airfoils.json"):
+    print(f"Searching '{json_filename}' for Thickness: {min_thick}-{max_thick}% | Camber: {min_camber}-{max_camber}%...")
     airfoil_names = []
-    page_num = 1
-    print(f"Searching database for Thickness: {min_thick}-{max_thick}% | Camber: {min_camber}-{max_camber}%...")
-    print(f"Targeting up to {max_results} airfoils.\n")
     
     try:
-        while len(airfoil_names) < max_results:
-            payload = {
-                "m[textSearch]": "",
-                "m[maxThickness]": max_thick,
-                "m[minThickness]": min_thick,
-                "m[maxCamber]": max_camber,
-                "m[minCamber]": min_camber,
-                "m[grp]": "",
-                "m[sort]": 9,
-                "m[page]": page_num # Increment this variable to turn the page
-            }
+        with open(json_filename, 'r', encoding='utf-8') as f:
+            airfoil_data = json.load(f)
             
-            print(f"  -> Scraping page {page_num}...")
-            response = requests.get(url, params=payload, headers=headers, timeout=10)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.text, 'html.parser')
-            links = soup.find_all('a', href=re.compile(r'airfoil='))
-            
-            added_on_page = 0
-            for link in links:
-                if len(airfoil_names) >= max_results:
-                    return airfoil_names 
+        for name, specs in airfoil_data.items():                
+            thickness = specs.get("max_thickness_percent")
+            camber = specs.get("max_camber_percent")
+            if thickness is not None and camber is not None:
+                if (min_thick <= thickness <= max_thick) and (min_camber <= camber <= max_camber):
+                    airfoil_names.append(name)
                     
-                href = link.get('href')
-                match = re.search(r'airfoil=([a-zA-Z0-9_\-]+)', href)                
-                if match:
-                    clean_name = match.group(1).replace("-il", "")
-                    if clean_name not in airfoil_names:
-                        airfoil_names.append(clean_name)
-                        added_on_page += 1
-            
-            if added_on_page == 0:
-                return airfoil_names
-            page_num += 1
-            time.sleep(1) 
-
-    except requests.exceptions.RequestException as e:
-        print(f"  -> [ERROR] Failed to search database: {e}")
+        print(f"  -> Found {len(airfoil_names)} airfoils matching the criteria.")
+        return airfoil_names
+        
+    except FileNotFoundError:
+        print(f"[ERROR] Could not find '{json_filename}'. Please ensure the file exists in the current directory.")
+        return []
+    except json.JSONDecodeError:
+        print(f"[ERROR] '{json_filename}' is corrupted or not a valid JSON file.")
         return []
 
 def plot_polars(airfoil_data_dict):
-    # Set up a 2x3 grid of plots
-    fig, axs = plt.subplots(2, 3, figsize=(16, 10))
+    fig, axs = plt.subplots(2, 3, figsize=(18, 10))
     fig.suptitle('Airfoil Aerodynamic Polars', fontsize=20, fontweight='bold')
+    
+    lines_by_airfoil = {name: [] for name in airfoil_data_dict.keys()}
     
     for name, data in airfoil_data_dict.items():
         alpha, cl, cd, cm = data
         ld = cl / cd 
         
-        # Cl vs Alpha
-        axs[0, 0].plot(alpha, cl, label=name)
+        line, = axs[0, 0].plot(alpha, cl, label=name)
+        lines_by_airfoil[name].append(line)
         axs[0, 0].set_title('Cl vs Alpha', fontsize=14)
         axs[0, 0].set_xlabel('Alpha (deg)')
         axs[0, 0].set_ylabel('Cl')
         axs[0, 0].grid(True)
         
-        # Cd vs Alpha
-        axs[0, 1].plot(alpha, cd, label=name)
+        line, = axs[0, 1].plot(alpha, cd, label=name)
+        lines_by_airfoil[name].append(line)
         axs[0, 1].set_title('Cd vs Alpha', fontsize=14)
         axs[0, 1].set_xlabel('Alpha (deg)')
         axs[0, 1].set_ylabel('Cd')
         axs[0, 1].grid(True)
         
-        # Cm vs Alpha
-        axs[0, 2].plot(alpha, cm, label=name)
+        line, = axs[0, 2].plot(alpha, cm, label=name)
+        lines_by_airfoil[name].append(line)
         axs[0, 2].set_title('Cm vs Alpha', fontsize=14)
         axs[0, 2].set_xlabel('Alpha (deg)')
         axs[0, 2].set_ylabel('Cm')
         axs[0, 2].grid(True)
         
-        # L/D vs Alpha
-        axs[1, 0].plot(alpha, ld, label=name)
+        line, = axs[1, 0].plot(alpha, ld, label=name)
+        lines_by_airfoil[name].append(line)
         axs[1, 0].set_title('L/D vs Alpha', fontsize=14)
         axs[1, 0].set_xlabel('Alpha (deg)')
         axs[1, 0].set_ylabel('L/D')
         axs[1, 0].grid(True)
         
-        # Cl vs Cd (Drag Polar)
-        axs[1, 1].plot(cd, cl, label=name)
+        line, = axs[1, 1].plot(cd, cl, label=name)
+        lines_by_airfoil[name].append(line)
         axs[1, 1].set_title('Cl vs Cd (Drag Polar)', fontsize=14)
         axs[1, 1].set_xlabel('Cd')
         axs[1, 1].set_ylabel('Cl')
         axs[1, 1].grid(True)
     
     axs[1, 2].axis('off')
-    handles, labels = axs[0, 0].get_legend_handles_labels()
-    axs[1, 2].legend(handles, labels, loc='center', fontsize=11, ncol=2)
-    plt.tight_layout(rect=[0, 0, 1, 0.93], h_pad=3.0, w_pad=2.0)
+    
+    plt.subplots_adjust(left=0.05, right=0.80, top=0.90, bottom=0.10, wspace=0.3, hspace=0.3)
+    rax = fig.add_axes([0.82, 0.05, 0.16, 0.85]) 
+    
+    labels = list(airfoil_data_dict.keys())
+    visibility = [True] * len(labels)
+    check = CheckButtons(rax, labels, visibility)
+
+    for label in check.labels:
+        label.set_fontsize(8)
+
+    def toggle_lines(label):
+        for line in lines_by_airfoil[label]:
+            line.set_visible(not line.get_visible())
+        fig.canvas.draw_idle()
+
+    check.on_clicked(toggle_lines)
     plt.show()
+    
+    return check
     
 def plot_pareto_frontier(airfoil_properties):
     df = pd.DataFrame(airfoil_properties, columns=['Name', 'Cl_max', 'LD_max'])
@@ -196,7 +189,7 @@ def plot_pareto_frontier(airfoil_properties):
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.legend(fontsize=12, loc='lower right')
     plt.show()
-    
+
 def filter_positive_lift_at_zero_cm(airfoils: dict, properties: list):
     passing_names = []
 

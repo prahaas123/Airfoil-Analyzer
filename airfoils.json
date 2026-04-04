@@ -1,0 +1,6286 @@
+{
+    "bacnlf": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 1.3
+    },
+    "du84132v": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 3.1
+    },
+    "hor04": {
+        "max_thickness_percent": 4.1,
+        "max_camber_percent": 1.4
+    },
+    "hor07": {
+        "max_thickness_percent": 7.2,
+        "max_camber_percent": 4.5
+    },
+    "hor12": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 3.7
+    },
+    "hor20": {
+        "max_thickness_percent": 20.4,
+        "max_camber_percent": 3.3
+    },
+    "hq17": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 4.5
+    },
+    "hs1404": {
+        "max_thickness_percent": 4.0,
+        "max_camber_percent": 3.1
+    },
+    "hs1430": {
+        "max_thickness_percent": 30.0,
+        "max_camber_percent": 3.0
+    },
+    "hs1606": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 4.4
+    },
+    "hs1620": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 4.1
+    },
+    "hs1708": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 5.0
+    },
+    "hs1712": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 4.9
+    },
+    "kc135winglet": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.7
+    },
+    "l1003": {
+        "max_thickness_percent": 17.7,
+        "max_camber_percent": 6.5
+    },
+    "la5055": {
+        "max_thickness_percent": 15.9,
+        "max_camber_percent": 5.9
+    },
+    "lrn1015": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 4.9
+    },
+    "s102b": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.0
+    },
+    "s102s": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.1
+    },
+    "s4094": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 1.8
+    },
+    "s4095": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 1.7
+    },
+    "s4096": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 1.2
+    },
+    "s8064": {
+        "max_thickness_percent": 12.3,
+        "max_camber_percent": 1.1
+    },
+    "s8065": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 1.1
+    },
+    "s8066": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.8
+    },
+    "supermarine371i": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 0.9
+    },
+    "supermarine371ii": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 0.9
+    },
+    "2032c": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 6.9
+    },
+    "a18": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 3.9
+    },
+    "a18sm": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 3.8
+    },
+    "a63a108c": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 0.5
+    },
+    "ag03": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 2.0
+    },
+    "ag04": {
+        "max_thickness_percent": 6.4,
+        "max_camber_percent": 1.7
+    },
+    "ag08": {
+        "max_thickness_percent": 5.8,
+        "max_camber_percent": 1.7
+    },
+    "ag09": {
+        "max_thickness_percent": 4.9,
+        "max_camber_percent": 1.8
+    },
+    "ag10": {
+        "max_thickness_percent": 4.7,
+        "max_camber_percent": 1.7
+    },
+    "ag11": {
+        "max_thickness_percent": 5.8,
+        "max_camber_percent": 2.2
+    },
+    "ag12": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 1.8
+    },
+    "ag13": {
+        "max_thickness_percent": 5.8,
+        "max_camber_percent": 2.0
+    },
+    "ag14": {
+        "max_thickness_percent": 5.4,
+        "max_camber_percent": 2.0
+    },
+    "ag16": {
+        "max_thickness_percent": 7.1,
+        "max_camber_percent": 1.9
+    },
+    "ag17": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 2.0
+    },
+    "ag18": {
+        "max_thickness_percent": 5.9,
+        "max_camber_percent": 2.2
+    },
+    "ag19": {
+        "max_thickness_percent": 5.4,
+        "max_camber_percent": 2.2
+    },
+    "ag24": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 2.2
+    },
+    "ag25": {
+        "max_thickness_percent": 7.6,
+        "max_camber_percent": 2.4
+    },
+    "ag26": {
+        "max_thickness_percent": 6.8,
+        "max_camber_percent": 2.5
+    },
+    "ag27": {
+        "max_thickness_percent": 6.1,
+        "max_camber_percent": 2.6
+    },
+    "ag35": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 2.3
+    },
+    "ag36": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 2.3
+    },
+    "ag37": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 2.1
+    },
+    "ag38": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 2.0
+    },
+    "ag44ct02r": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 1.9
+    },
+    "ag455ct02r": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 1.8
+    },
+    "ag45c03": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 2.0
+    },
+    "ag45ct02r": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 1.8
+    },
+    "ag46c03": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.9
+    },
+    "ag46ct02r": {
+        "max_thickness_percent": 6.1,
+        "max_camber_percent": 1.6
+    },
+    "ag47c03": {
+        "max_thickness_percent": 5.1,
+        "max_camber_percent": 1.3
+    },
+    "ag47ct02r": {
+        "max_thickness_percent": 5.0,
+        "max_camber_percent": 1.2
+    },
+    "ah21-7": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.3
+    },
+    "ah21-9": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 1.8
+    },
+    "ah63k127": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 3.8
+    },
+    "ah6407": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 5.5
+    },
+    "ah7476": {
+        "max_thickness_percent": 5.9,
+        "max_camber_percent": 6.2
+    },
+    "ah79100a": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.6
+    },
+    "ah79100b": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 6.4
+    },
+    "ah79100c": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 6.7
+    },
+    "ah79k132": {
+        "max_thickness_percent": 13.2,
+        "max_camber_percent": 3.7
+    },
+    "ah79k135": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 3.1
+    },
+    "ah79k143": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 2.9
+    },
+    "ah80129": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 4.1
+    },
+    "ah80136": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 3.4
+    },
+    "ah80140": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 4.4
+    },
+    "ah81131": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 2.8
+    },
+    "ah81k144": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 4.2
+    },
+    "ah81k144wfKlappe": {
+        "max_thickness_percent": 22.0,
+        "max_camber_percent": 1.1
+    },
+    "ah82150a": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.3
+    },
+    "ah82150f": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.6
+    },
+    "ah83150q": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.1
+    },
+    "ah83159": {
+        "max_thickness_percent": 15.9,
+        "max_camber_percent": 3.8
+    },
+    "ah85l120": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 0.0
+    },
+    "ah88k130": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 3.9
+    },
+    "ah88k136": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 3.0
+    },
+    "ah93156": {
+        "max_thickness_percent": 15.7,
+        "max_camber_percent": 3.7
+    },
+    "ah93157": {
+        "max_thickness_percent": 15.7,
+        "max_camber_percent": 3.5
+    },
+    "ah93k130": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 3.5
+    },
+    "ah93k131": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 3.6
+    },
+    "ah93k132": {
+        "max_thickness_percent": 13.2,
+        "max_camber_percent": 3.5
+    },
+    "ah93w145": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 3.9
+    },
+    "ah93w174": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 3.9
+    },
+    "ah93w215": {
+        "max_thickness_percent": 21.2,
+        "max_camber_percent": 3.1
+    },
+    "ah93w257": {
+        "max_thickness_percent": 25.7,
+        "max_camber_percent": 2.1
+    },
+    "ah93w300": {
+        "max_thickness_percent": 30.0,
+        "max_camber_percent": 1.6
+    },
+    "ah93w480b": {
+        "max_thickness_percent": 47.8,
+        "max_camber_percent": 3.6
+    },
+    "ah94145": {
+        "max_thickness_percent": 14.6,
+        "max_camber_percent": 5.6
+    },
+    "ah94156": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 3.6
+    },
+    "ah94w301": {
+        "max_thickness_percent": 30.1,
+        "max_camber_percent": 1.3
+    },
+    "ah95160": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 5.6
+    },
+    "ames01": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 1.4
+    },
+    "ames02": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 0.5
+    },
+    "ames03": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.2
+    },
+    "amsoil1": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 2.1
+    },
+    "amsoil2": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 1.0
+    },
+    "apex16": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 2.4
+    },
+    "aquilasm": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 4.0
+    },
+    "arad10": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 4.0
+    },
+    "arad13": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 3.6
+    },
+    "arad20": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 3.8
+    },
+    "arad6": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 5.0
+    },
+    "as5045": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.0
+    },
+    "as5046": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 0.7
+    },
+    "as5048": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 0.8
+    },
+    "atr72sm": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 2.9
+    },
+    "august160": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 5.4
+    },
+    "avistar": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 2.3
+    },
+    "b29root": {
+        "max_thickness_percent": 22.0,
+        "max_camber_percent": 1.7
+    },
+    "b29tip": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.2
+    },
+    "b540ols": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 0.0
+    },
+    "b707a": {
+        "max_thickness_percent": 11.4,
+        "max_camber_percent": 0.2
+    },
+    "b707b": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 0.7
+    },
+    "b707c": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 1.9
+    },
+    "b707d": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.8
+    },
+    "b707e": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.8
+    },
+    "b737a": {
+        "max_thickness_percent": 15.4,
+        "max_camber_percent": 0.2
+    },
+    "b737b": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 0.8
+    },
+    "b737c": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.5
+    },
+    "b737d": {
+        "max_thickness_percent": 10.8,
+        "max_camber_percent": 1.6
+    },
+    "bacj": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 1.7
+    },
+    "bacxxx": {
+        "max_thickness_percent": 11.3,
+        "max_camber_percent": 1.4
+    },
+    "bambino6": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.8
+    },
+    "be50": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 4.1
+    },
+    "be50sm": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 4.0
+    },
+    "boe103": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 3.6
+    },
+    "boe106": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 3.3
+    },
+    "bqm34": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 0.0
+    },
+    "bw3": {
+        "max_thickness_percent": 5.0,
+        "max_camber_percent": 5.7
+    },
+    "c141a": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 1.1
+    },
+    "c141b": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 1.1
+    },
+    "c141c": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 1.3
+    },
+    "c141d": {
+        "max_thickness_percent": 10.8,
+        "max_camber_percent": 1.5
+    },
+    "c141e": {
+        "max_thickness_percent": 10.5,
+        "max_camber_percent": 1.8
+    },
+    "c141f": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.3
+    },
+    "c5a": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 0.7
+    },
+    "c5b": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 1.2
+    },
+    "c5c": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 1.4
+    },
+    "c5d": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 1.4
+    },
+    "c5e": {
+        "max_thickness_percent": 10.8,
+        "max_camber_percent": 1.4
+    },
+    "cap21c": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 0.6
+    },
+    "cast102": {
+        "max_thickness_percent": 12.2,
+        "max_camber_percent": 1.5
+    },
+    "ch10sm": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 10.2
+    },
+    "chen": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 7.8
+    },
+    "clarkk": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 3.3
+    },
+    "clarkv": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 3.4
+    },
+    "clarkw": {
+        "max_thickness_percent": 11.2,
+        "max_camber_percent": 3.7
+    },
+    "clarkx": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 3.3
+    },
+    "clarky": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 3.4
+    },
+    "clarkyh": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 2.5
+    },
+    "clarkys": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 2.4
+    },
+    "clarkysm": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 3.5
+    },
+    "clarkz": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 4.0
+    },
+    "clarym15": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.6
+    },
+    "clarym18": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 3.6
+    },
+    "coanda1": {
+        "max_thickness_percent": 5.7,
+        "max_camber_percent": 2.9
+    },
+    "coanda2": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 2.9
+    },
+    "coanda3": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 2.9
+    },
+    "cootie": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 5.5
+    },
+    "cr001sm": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 4.1
+    },
+    "cr1": {
+        "max_thickness_percent": 12.2,
+        "max_camber_percent": 4.7
+    },
+    "curtisc72": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 3.8
+    },
+    "dae11": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 6.6
+    },
+    "dae21": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 6.6
+    },
+    "dae31": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 6.7
+    },
+    "dae51": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 4.0
+    },
+    "davis": {
+        "max_thickness_percent": 11.3,
+        "max_camber_percent": 3.7
+    },
+    "davissm": {
+        "max_thickness_percent": 5.9,
+        "max_camber_percent": 5.9
+    },
+    "daytonwright6": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 4.9
+    },
+    "daytonwrightt1": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 4.4
+    },
+    "dbln526": {
+        "max_thickness_percent": 26.0,
+        "max_camber_percent": 4.0
+    },
+    "defcnd1": {
+        "max_thickness_percent": 20.9,
+        "max_camber_percent": 4.5
+    },
+    "defcnd2": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 3.8
+    },
+    "defcnd3": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 2.4
+    },
+    "df101": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.3
+    },
+    "df102": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.4
+    },
+    "dfvlrr4": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 2.1
+    },
+    "dga1138": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 2.6
+    },
+    "dga1182": {
+        "max_thickness_percent": 7.6,
+        "max_camber_percent": 0.9
+    },
+    "dh4009sm": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 0.2
+    },
+    "doa5": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 2.5
+    },
+    "dormoy": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.9
+    },
+    "drgnfly": {
+        "max_thickness_percent": 19.3,
+        "max_camber_percent": 6.6
+    },
+    "dsma523a": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.3
+    },
+    "dsma523b": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.4
+    },
+    "du8608418": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.0
+    },
+    "du861372": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 0.3
+    },
+    "e1098": {
+        "max_thickness_percent": 18.9,
+        "max_camber_percent": 3.7
+    },
+    "e1200": {
+        "max_thickness_percent": 16.9,
+        "max_camber_percent": 3.5
+    },
+    "e1210": {
+        "max_thickness_percent": 15.9,
+        "max_camber_percent": 5.2
+    },
+    "e1211": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 4.4
+    },
+    "e1212": {
+        "max_thickness_percent": 17.7,
+        "max_camber_percent": 3.2
+    },
+    "e1212mod": {
+        "max_thickness_percent": 17.7,
+        "max_camber_percent": 2.6
+    },
+    "e1213": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 2.1
+    },
+    "e1214": {
+        "max_thickness_percent": 19.8,
+        "max_camber_percent": 2.1
+    },
+    "e1230": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 3.6
+    },
+    "e1233": {
+        "max_thickness_percent": 18.9,
+        "max_camber_percent": 4.4
+    },
+    "e168": {
+        "max_thickness_percent": 12.4,
+        "max_camber_percent": 0.0
+    },
+    "e169": {
+        "max_thickness_percent": 14.4,
+        "max_camber_percent": 0.0
+    },
+    "e171": {
+        "max_thickness_percent": 12.3,
+        "max_camber_percent": 0.0
+    },
+    "e174": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 3.3
+    },
+    "e176": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 2.9
+    },
+    "e178": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 2.8
+    },
+    "e180": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 2.0
+    },
+    "e182": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.2
+    },
+    "e184": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 0.8
+    },
+    "e186": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 0.8
+    },
+    "e193": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 3.0
+    },
+    "e195": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 2.7
+    },
+    "e197": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 2.8
+    },
+    "e201": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 2.6
+    },
+    "e203": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 2.3
+    },
+    "e205": {
+        "max_thickness_percent": 10.5,
+        "max_camber_percent": 2.5
+    },
+    "e207": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.5
+    },
+    "e209": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 1.6
+    },
+    "e210": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 3.7
+    },
+    "e211": {
+        "max_thickness_percent": 10.9,
+        "max_camber_percent": 2.2
+    },
+    "e212": {
+        "max_thickness_percent": 10.6,
+        "max_camber_percent": 2.5
+    },
+    "e214": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 3.7
+    },
+    "e216": {
+        "max_thickness_percent": 10.4,
+        "max_camber_percent": 4.7
+    },
+    "e220": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 2.2
+    },
+    "e221": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 1.6
+    },
+    "e222": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 2.1
+    },
+    "e224": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 1.5
+    },
+    "e226": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 0.5
+    },
+    "e228": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 0.3
+    },
+    "e230": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "e231": {
+        "max_thickness_percent": 12.3,
+        "max_camber_percent": 2.5
+    },
+    "e266": {
+        "max_thickness_percent": 17.3,
+        "max_camber_percent": 3.1
+    },
+    "e297": {
+        "max_thickness_percent": 11.4,
+        "max_camber_percent": 0.0
+    },
+    "e325": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 1.8
+    },
+    "e326": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 2.1
+    },
+    "e327": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 2.6
+    },
+    "e328": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 3.0
+    },
+    "e329": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 3.5
+    },
+    "e330": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.1
+    },
+    "e331": {
+        "max_thickness_percent": 11.2,
+        "max_camber_percent": 2.7
+    },
+    "e332": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 3.1
+    },
+    "e333": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 3.5
+    },
+    "e334": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 4.0
+    },
+    "e335": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 2.3
+    },
+    "e336": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 2.8
+    },
+    "e337": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 3.2
+    },
+    "e338": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 3.7
+    },
+    "e339": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 4.1
+    },
+    "e340": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 2.6
+    },
+    "e341": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 3.0
+    },
+    "e342": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 3.5
+    },
+    "e343": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 4.0
+    },
+    "e344": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 4.3
+    },
+    "e360": {
+        "max_thickness_percent": 12.2,
+        "max_camber_percent": 1.6
+    },
+    "e361": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 1.7
+    },
+    "e374": {
+        "max_thickness_percent": 10.9,
+        "max_camber_percent": 2.0
+    },
+    "e376": {
+        "max_thickness_percent": 2.5,
+        "max_camber_percent": 9.0
+    },
+    "e377": {
+        "max_thickness_percent": 3.9,
+        "max_camber_percent": 8.8
+    },
+    "e377m": {
+        "max_thickness_percent": 3.8,
+        "max_camber_percent": 9.2
+    },
+    "e378": {
+        "max_thickness_percent": 4.1,
+        "max_camber_percent": 8.1
+    },
+    "e379": {
+        "max_thickness_percent": 2.2,
+        "max_camber_percent": 8.0
+    },
+    "e385": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 5.3
+    },
+    "e387": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 3.2
+    },
+    "e392": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 3.7
+    },
+    "e393": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 4.0
+    },
+    "e395": {
+        "max_thickness_percent": 12.3,
+        "max_camber_percent": 5.2
+    },
+    "e396": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 5.4
+    },
+    "e397": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 5.3
+    },
+    "e398": {
+        "max_thickness_percent": 14.2,
+        "max_camber_percent": 5.3
+    },
+    "e399": {
+        "max_thickness_percent": 14.8,
+        "max_camber_percent": 5.1
+    },
+    "e403": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.2
+    },
+    "e407": {
+        "max_thickness_percent": 14.4,
+        "max_camber_percent": 3.5
+    },
+    "e417": {
+        "max_thickness_percent": 14.2,
+        "max_camber_percent": 3.1
+    },
+    "e420": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 10.6
+    },
+    "e421": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 8.6
+    },
+    "e422": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 7.1
+    },
+    "e423": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 9.5
+    },
+    "e426": {
+        "max_thickness_percent": 10.8,
+        "max_camber_percent": 0.6
+    },
+    "e428": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 0.5
+    },
+    "e431": {
+        "max_thickness_percent": 15.1,
+        "max_camber_percent": 4.2
+    },
+    "e432": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 4.5
+    },
+    "e433": {
+        "max_thickness_percent": 14.2,
+        "max_camber_percent": 3.9
+    },
+    "e434": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 4.3
+    },
+    "e435": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 4.4
+    },
+    "e471": {
+        "max_thickness_percent": 6.3,
+        "max_camber_percent": 4.5
+    },
+    "e472": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 0.0
+    },
+    "e473": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 0.0
+    },
+    "e474": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 0.0
+    },
+    "e475": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "e479": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 0.0
+    },
+    "e485": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 1.1
+    },
+    "e49": {
+        "max_thickness_percent": 7.2,
+        "max_camber_percent": 6.5
+    },
+    "e502": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 1.5
+    },
+    "e520": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "e521": {
+        "max_thickness_percent": 13.8,
+        "max_camber_percent": 0.0
+    },
+    "e540": {
+        "max_thickness_percent": 16.9,
+        "max_camber_percent": 1.6
+    },
+    "e541": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 1.7
+    },
+    "e542": {
+        "max_thickness_percent": 16.9,
+        "max_camber_percent": 1.9
+    },
+    "e543": {
+        "max_thickness_percent": 17.2,
+        "max_camber_percent": 1.9
+    },
+    "e544": {
+        "max_thickness_percent": 17.5,
+        "max_camber_percent": 1.9
+    },
+    "e545": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 1.8
+    },
+    "e546": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 1.8
+    },
+    "e547": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 2.0
+    },
+    "e548": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 2.2
+    },
+    "e549": {
+        "max_thickness_percent": 18.1,
+        "max_camber_percent": 2.0
+    },
+    "e550": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 2.2
+    },
+    "e551": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 2.8
+    },
+    "e552": {
+        "max_thickness_percent": 18.4,
+        "max_camber_percent": 2.6
+    },
+    "e553": {
+        "max_thickness_percent": 18.1,
+        "max_camber_percent": 2.9
+    },
+    "e554": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 2.7
+    },
+    "e555": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 2.6
+    },
+    "e556": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 3.1
+    },
+    "e557": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 3.7
+    },
+    "e558": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 3.8
+    },
+    "e559": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 4.3
+    },
+    "e560": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 4.9
+    },
+    "e561": {
+        "max_thickness_percent": 16.9,
+        "max_camber_percent": 5.1
+    },
+    "e562": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.0
+    },
+    "e58": {
+        "max_thickness_percent": 5.6,
+        "max_camber_percent": 6.5
+    },
+    "e580": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 4.1
+    },
+    "e582": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 4.2
+    },
+    "e583": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 4.5
+    },
+    "e584": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 4.5
+    },
+    "e585": {
+        "max_thickness_percent": 14.6,
+        "max_camber_percent": 4.2
+    },
+    "e587": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 4.2
+    },
+    "e59": {
+        "max_thickness_percent": 5.6,
+        "max_camber_percent": 5.2
+    },
+    "e591": {
+        "max_thickness_percent": 15.7,
+        "max_camber_percent": 6.0
+    },
+    "e593": {
+        "max_thickness_percent": 11.3,
+        "max_camber_percent": 4.6
+    },
+    "e598": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 4.5
+    },
+    "e603": {
+        "max_thickness_percent": 19.0,
+        "max_camber_percent": 3.6
+    },
+    "e604": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 3.4
+    },
+    "e61": {
+        "max_thickness_percent": 5.7,
+        "max_camber_percent": 6.4
+    },
+    "e62": {
+        "max_thickness_percent": 5.6,
+        "max_camber_percent": 5.0
+    },
+    "e625": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 2.9
+    },
+    "e63": {
+        "max_thickness_percent": 4.3,
+        "max_camber_percent": 5.3
+    },
+    "e635": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 2.9
+    },
+    "e636": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 3.2
+    },
+    "e637": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 3.6
+    },
+    "e638": {
+        "max_thickness_percent": 12.4,
+        "max_camber_percent": 4.4
+    },
+    "e639": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 4.8
+    },
+    "e64": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 2.9
+    },
+    "e642": {
+        "max_thickness_percent": 15.1,
+        "max_camber_percent": 3.0
+    },
+    "e654": {
+        "max_thickness_percent": 17.2,
+        "max_camber_percent": 4.9
+    },
+    "e655": {
+        "max_thickness_percent": 17.3,
+        "max_camber_percent": 3.9
+    },
+    "e656": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 4.8
+    },
+    "e657": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 4.6
+    },
+    "e66": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 4.1
+    },
+    "e662": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.1
+    },
+    "e664": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 2.6
+    },
+    "e668": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 4.0
+    },
+    "e67": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 3.7
+    },
+    "e678": {
+        "max_thickness_percent": 15.1,
+        "max_camber_percent": 5.1
+    },
+    "e68": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 3.3
+    },
+    "e682": {
+        "max_thickness_percent": 15.3,
+        "max_camber_percent": 2.9
+    },
+    "e694": {
+        "max_thickness_percent": 15.4,
+        "max_camber_percent": 4.9
+    },
+    "e71": {
+        "max_thickness_percent": 5.2,
+        "max_camber_percent": 4.4
+    },
+    "e715": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.8
+    },
+    "e748": {
+        "max_thickness_percent": 19.7,
+        "max_camber_percent": 4.6
+    },
+    "e793": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 4.2
+    },
+    "e817": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.9
+    },
+    "e818": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 2.8
+    },
+    "e836": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 0.0
+    },
+    "e837": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 0.0
+    },
+    "e838": {
+        "max_thickness_percent": 18.4,
+        "max_camber_percent": 0.0
+    },
+    "e850": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.8
+    },
+    "e851": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.3
+    },
+    "e852": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 2.8
+    },
+    "e853": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 3.1
+    },
+    "e854": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 3.3
+    },
+    "e855": {
+        "max_thickness_percent": 15.7,
+        "max_camber_percent": 3.7
+    },
+    "e856": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 4.2
+    },
+    "e857": {
+        "max_thickness_percent": 20.3,
+        "max_camber_percent": 4.9
+    },
+    "e858": {
+        "max_thickness_percent": 22.7,
+        "max_camber_percent": 4.7
+    },
+    "e862": {
+        "max_thickness_percent": 32.4,
+        "max_camber_percent": 0.0
+    },
+    "e863": {
+        "max_thickness_percent": 35.7,
+        "max_camber_percent": 0.0
+    },
+    "e864": {
+        "max_thickness_percent": 38.8,
+        "max_camber_percent": 0.1
+    },
+    "e874": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 0.9
+    },
+    "e904": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.3
+    },
+    "e908": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.8
+    },
+    "ea61009": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 0.0
+    },
+    "ea61012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "ea81006": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 0.0
+    },
+    "ebambino7": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.9
+    },
+    "ec863914": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 4.4
+    },
+    "eh0009": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 0.0
+    },
+    "eh1070": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 1.0
+    },
+    "eh1090": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.0
+    },
+    "eh1590": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.5
+    },
+    "eh2010": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 2.0
+    },
+    "eh2012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.0
+    },
+    "eh2070": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 2.0
+    },
+    "eh2510": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.5
+    },
+    "eh3012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.9
+    },
+    "eiffel10": {
+        "max_thickness_percent": 2.7,
+        "max_camber_percent": 6.1
+    },
+    "eiffel371": {
+        "max_thickness_percent": 14.4,
+        "max_camber_percent": 3.3
+    },
+    "eiffel385": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 4.4
+    },
+    "eiffel428": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 4.2
+    },
+    "eiffel430": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 4.5
+    },
+    "esa40": {
+        "max_thickness_percent": 10.7,
+        "max_camber_percent": 2.0
+    },
+    "falcon": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 1.6
+    },
+    "fauvel": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 2.5
+    },
+    "fg1": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 3.1
+    },
+    "fg2": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 3.3
+    },
+    "fg3": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 4.3
+    },
+    "fg4": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 4.7
+    },
+    "fx049915": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 5.8
+    },
+    "fx05188": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 2.6
+    },
+    "fx05191": {
+        "max_thickness_percent": 19.1,
+        "max_camber_percent": 2.6
+    },
+    "fx057816": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 5.1
+    },
+    "fx05h126": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 4.4
+    },
+    "fx082512": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 4.2
+    },
+    "fx08s176": {
+        "max_thickness_percent": 17.6,
+        "max_camber_percent": 5.7
+    },
+    "fx2": {
+        "max_thickness_percent": 20.4,
+        "max_camber_percent": 3.8
+    },
+    "fx3": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 4.2
+    },
+    "fx38153": {
+        "max_thickness_percent": 15.5,
+        "max_camber_percent": 2.1
+    },
+    "fx60100": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.6
+    },
+    "fx601001": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 3.6
+    },
+    "fx60100sm": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.5
+    },
+    "fx60126": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 3.6
+    },
+    "fx601261": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 4.0
+    },
+    "fx60157": {
+        "max_thickness_percent": 15.7,
+        "max_camber_percent": 2.7
+    },
+    "fx60160": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 3.1
+    },
+    "fx60177": {
+        "max_thickness_percent": 17.7,
+        "max_camber_percent": 2.7
+    },
+    "fx61140": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 2.5
+    },
+    "fx61147": {
+        "max_thickness_percent": 14.8,
+        "max_camber_percent": 3.2
+    },
+    "fx61163": {
+        "max_thickness_percent": 16.4,
+        "max_camber_percent": 2.6
+    },
+    "fx61168": {
+        "max_thickness_percent": 16.8,
+        "max_camber_percent": 3.0
+    },
+    "fx61184": {
+        "max_thickness_percent": 18.4,
+        "max_camber_percent": 3.1
+    },
+    "fx62k131": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 3.9
+    },
+    "fx62k153": {
+        "max_thickness_percent": 15.3,
+        "max_camber_percent": 4.1
+    },
+    "fx63100": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 4.3
+    },
+    "fx63110": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 4.3
+    },
+    "fx63120": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 5.2
+    },
+    "fx63137": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 6.0
+    },
+    "fx63137sm": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 5.8
+    },
+    "fx63143": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 3.1
+    },
+    "fx63145": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 4.0
+    },
+    "fx63147": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 3.1
+    },
+    "fx63158": {
+        "max_thickness_percent": 15.8,
+        "max_camber_percent": 3.8
+    },
+    "fx6617a2": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 3.8
+    },
+    "fx6617ai": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 3.7
+    },
+    "fx66182": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 3.8
+    },
+    "fx66196v": {
+        "max_thickness_percent": 19.6,
+        "max_camber_percent": 4.0
+    },
+    "fx66a175": {
+        "max_thickness_percent": 17.5,
+        "max_camber_percent": 4.2
+    },
+    "fx66h60": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.7
+    },
+    "fx66h80": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.5
+    },
+    "fx66s161": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 3.9
+    },
+    "fx66s171": {
+        "max_thickness_percent": 17.1,
+        "max_camber_percent": 3.9
+    },
+    "fx66s196": {
+        "max_thickness_percent": 19.6,
+        "max_camber_percent": 3.8
+    },
+    "fx67k150": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.8
+    },
+    "fx67k170": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 5.1
+    },
+    "fx68h120": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 2.3
+    },
+    "fx69274": {
+        "max_thickness_percent": 27.4,
+        "max_camber_percent": 3.2
+    },
+    "fx69h083": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 2.5
+    },
+    "fx69h098": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 1.7
+    },
+    "fx69pr281": {
+        "max_thickness_percent": 28.1,
+        "max_camber_percent": 5.6
+    },
+    "fx71089a": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 0.0
+    },
+    "fx71120": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "fx711520": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "fx711525": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "fx711530": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "fx71l150": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "fx72150a": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 8.3
+    },
+    "fx72150b": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 9.7
+    },
+    "fx72ls160": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 8.2
+    },
+    "fx73170": {
+        "max_thickness_percent": 17.1,
+        "max_camber_percent": 4.4
+    },
+    "fx73170a": {
+        "max_thickness_percent": 17.1,
+        "max_camber_percent": 5.6
+    },
+    "fx73cl1152": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 6.1
+    },
+    "fx73cl2152": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 6.6
+    },
+    "fx73cl3152": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 8.0
+    },
+    "fx73k170": {
+        "max_thickness_percent": 17.1,
+        "max_camber_percent": 4.6
+    },
+    "fx74080": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 4.3
+    },
+    "fx74130wp1": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 3.8
+    },
+    "fx74130wp2": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 3.9
+    },
+    "fx74130wp2mod": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 3.9
+    },
+    "fx74cl5140": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 9.9
+    },
+    "fx74cl6140": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 7.1
+    },
+    "fx74modsm": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 9.7
+    },
+    "fx75141": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 3.4
+    },
+    "fx75193": {
+        "max_thickness_percent": 19.3,
+        "max_camber_percent": 3.7
+    },
+    "fx75vg166": {
+        "max_thickness_percent": 16.7,
+        "max_camber_percent": 2.4
+    },
+    "fx76100": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 0.0
+    },
+    "fx76120": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 0.0
+    },
+    "fx76mp120": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 7.6
+    },
+    "fx76mp140": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 7.1
+    },
+    "fx76mp160": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 6.1
+    },
+    "fx77080": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.0
+    },
+    "fx77w121": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 4.6
+    },
+    "fx77w153": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 4.5
+    },
+    "fx77w258": {
+        "max_thickness_percent": 26.1,
+        "max_camber_percent": 4.3
+    },
+    "fx77w270": {
+        "max_thickness_percent": 27.1,
+        "max_camber_percent": 4.3
+    },
+    "fx77w270s": {
+        "max_thickness_percent": 27.1,
+        "max_camber_percent": 4.2
+    },
+    "fx77w343": {
+        "max_thickness_percent": 34.4,
+        "max_camber_percent": 4.7
+    },
+    "fx78k140": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 4.4
+    },
+    "fx78k140a20": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 4.4
+    },
+    "fx78k150": {
+        "max_thickness_percent": 15.1,
+        "max_camber_percent": 4.3
+    },
+    "fx78k161": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 2.8
+    },
+    "fx78pk188": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 2.4
+    },
+    "fx79k144": {
+        "max_thickness_percent": 14.4,
+        "max_camber_percent": 2.8
+    },
+    "fx79l100": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 0.0
+    },
+    "fx79l120": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 0.0
+    },
+    "fx79w151a": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 3.8
+    },
+    "fx79w470a": {
+        "max_thickness_percent": 46.4,
+        "max_camber_percent": 3.8
+    },
+    "fx79w660a": {
+        "max_thickness_percent": 66.4,
+        "max_camber_percent": 2.3
+    },
+    "fx80080": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 2.2
+    },
+    "fx83w108": {
+        "max_thickness_percent": 10.9,
+        "max_camber_percent": 4.2
+    },
+    "fx83w160": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 3.9
+    },
+    "fx83w227": {
+        "max_thickness_percent": 22.6,
+        "max_camber_percent": 3.4
+    },
+    "fx84w097": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 2.8
+    },
+    "fx84w127": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 3.7
+    },
+    "fx84w140": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 4.2
+    },
+    "fx84w150": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.2
+    },
+    "fx84w175": {
+        "max_thickness_percent": 17.6,
+        "max_camber_percent": 4.4
+    },
+    "fx84w218": {
+        "max_thickness_percent": 22.0,
+        "max_camber_percent": 3.2
+    },
+    "fxl142k": {
+        "max_thickness_percent": 14.2,
+        "max_camber_percent": 0.0
+    },
+    "fxlv152": {
+        "max_thickness_percent": 15.3,
+        "max_camber_percent": 0.0
+    },
+    "fxm2": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 4.8
+    },
+    "fxs02196": {
+        "max_thickness_percent": 19.6,
+        "max_camber_percent": 3.7
+    },
+    "fxs03182": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 2.9
+    },
+    "fxs21158": {
+        "max_thickness_percent": 15.8,
+        "max_camber_percent": 3.5
+    },
+    "geminism": {
+        "max_thickness_percent": 15.4,
+        "max_camber_percent": 2.2
+    },
+    "giiia": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 0.7
+    },
+    "giiib": {
+        "max_thickness_percent": 10.4,
+        "max_camber_percent": 0.8
+    },
+    "giiic": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 0.9
+    },
+    "giiid": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 1.0
+    },
+    "giiie": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 1.2
+    },
+    "giiif": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 1.3
+    },
+    "giiig": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 1.3
+    },
+    "giiih": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 1.3
+    },
+    "giiii": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.3
+    },
+    "giiij": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.4
+    },
+    "giiik": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.5
+    },
+    "giiil": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.6
+    },
+    "giiim": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.9
+    },
+    "giiin": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 2.1
+    },
+    "glennmartin2": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 6.1
+    },
+    "glennmartin3": {
+        "max_thickness_percent": 13.8,
+        "max_camber_percent": 4.6
+    },
+    "glennmartin4": {
+        "max_thickness_percent": 15.5,
+        "max_camber_percent": 6.0
+    },
+    "gm15sm": {
+        "max_thickness_percent": 6.7,
+        "max_camber_percent": 4.8
+    },
+    "goe05k": {
+        "max_thickness_percent": 3.7,
+        "max_camber_percent": 1.5
+    },
+    "goe06k": {
+        "max_thickness_percent": 7.5,
+        "max_camber_percent": 3.1
+    },
+    "goe07k": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 4.5
+    },
+    "goe08k": {
+        "max_thickness_percent": 14.9,
+        "max_camber_percent": 6.1
+    },
+    "goe09k": {
+        "max_thickness_percent": 2.5,
+        "max_camber_percent": 0.9
+    },
+    "goe100": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 3.6
+    },
+    "goe101": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 4.0
+    },
+    "goe10k": {
+        "max_thickness_percent": 3.9,
+        "max_camber_percent": 1.4
+    },
+    "goe113": {
+        "max_thickness_percent": 6.7,
+        "max_camber_percent": 3.0
+    },
+    "goe114": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 3.5
+    },
+    "goe115": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 3.7
+    },
+    "goe116": {
+        "max_thickness_percent": 9.3,
+        "max_camber_percent": 4.1
+    },
+    "goe117": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 4.6
+    },
+    "goe118": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 5.7
+    },
+    "goe11k": {
+        "max_thickness_percent": 7.5,
+        "max_camber_percent": 2.7
+    },
+    "goe121": {
+        "max_thickness_percent": 6.7,
+        "max_camber_percent": 4.6
+    },
+    "goe122": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 4.1
+    },
+    "goe123": {
+        "max_thickness_percent": 5.4,
+        "max_camber_percent": 5.7
+    },
+    "goe124": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 5.6
+    },
+    "goe12k": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 4.1
+    },
+    "goe133": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 4.3
+    },
+    "goe134": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 4.0
+    },
+    "goe137": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 4.4
+    },
+    "goe13k": {
+        "max_thickness_percent": 14.8,
+        "max_camber_percent": 5.5
+    },
+    "goe14": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 6.9
+    },
+    "goe140": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 5.3
+    },
+    "goe142": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 3.8
+    },
+    "goe143": {
+        "max_thickness_percent": 7.4,
+        "max_camber_percent": 3.8
+    },
+    "goe144": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 4.7
+    },
+    "goe147": {
+        "max_thickness_percent": 7.5,
+        "max_camber_percent": 3.8
+    },
+    "goe14k": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.7
+    },
+    "goe15": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 7.8
+    },
+    "goe155": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 5.3
+    },
+    "goe15k": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.4
+    },
+    "goe164": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 6.6
+    },
+    "goe165": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 5.7
+    },
+    "goe167": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 4.5
+    },
+    "goe16k": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 4.1
+    },
+    "goe173": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 5.9
+    },
+    "goe174": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 5.6
+    },
+    "goe176": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 5.6
+    },
+    "goe177": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 5.0
+    },
+    "goe178": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 4.4
+    },
+    "goe180": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 4.4
+    },
+    "goe182": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 5.3
+    },
+    "goe184": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 5.3
+    },
+    "goe187": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 4.8
+    },
+    "goe188": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 4.3
+    },
+    "goe190": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 5.9
+    },
+    "goe195": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 5.1
+    },
+    "goe198": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 6.5
+    },
+    "goe199": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 5.2
+    },
+    "goe207": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 6.6
+    },
+    "goe210": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 4.3
+    },
+    "goe217": {
+        "max_thickness_percent": 19.0,
+        "max_camber_percent": 6.3
+    },
+    "goe222": {
+        "max_thickness_percent": 18.5,
+        "max_camber_percent": 7.2
+    },
+    "goe223": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 5.7
+    },
+    "goe225": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 7.6
+    },
+    "goe226": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 8.1
+    },
+    "goe227": {
+        "max_thickness_percent": 14.6,
+        "max_camber_percent": 7.8
+    },
+    "goe228": {
+        "max_thickness_percent": 17.9,
+        "max_camber_percent": 7.0
+    },
+    "goe229": {
+        "max_thickness_percent": 19.3,
+        "max_camber_percent": 5.9
+    },
+    "goe233": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 8.2
+    },
+    "goe234": {
+        "max_thickness_percent": 14.2,
+        "max_camber_percent": 9.2
+    },
+    "goe235": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 3.5
+    },
+    "goe238": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 5.5
+    },
+    "goe239": {
+        "max_thickness_percent": 11.2,
+        "max_camber_percent": 6.0
+    },
+    "goe240": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 5.2
+    },
+    "goe241": {
+        "max_thickness_percent": 18.9,
+        "max_camber_percent": 8.4
+    },
+    "goe242": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 7.5
+    },
+    "goe243": {
+        "max_thickness_percent": 19.0,
+        "max_camber_percent": 8.4
+    },
+    "goe244": {
+        "max_thickness_percent": 17.7,
+        "max_camber_percent": 10.0
+    },
+    "goe255": {
+        "max_thickness_percent": 18.5,
+        "max_camber_percent": 4.8
+    },
+    "goe256": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 4.7
+    },
+    "goe257": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 4.1
+    },
+    "goe264": {
+        "max_thickness_percent": 6.4,
+        "max_camber_percent": 5.7
+    },
+    "goe265": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 7.3
+    },
+    "goe269": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 5.0
+    },
+    "goe274": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 4.8
+    },
+    "goe275": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 4.7
+    },
+    "goe276": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 4.0
+    },
+    "goe277": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 4.4
+    },
+    "goe278": {
+        "max_thickness_percent": 7.4,
+        "max_camber_percent": 4.3
+    },
+    "goe279": {
+        "max_thickness_percent": 7.4,
+        "max_camber_percent": 4.7
+    },
+    "goe280": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 4.5
+    },
+    "goe281": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 4.5
+    },
+    "goe282": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 5.0
+    },
+    "goe284": {
+        "max_thickness_percent": 17.7,
+        "max_camber_percent": 5.1
+    },
+    "goe285": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 3.7
+    },
+    "goe286": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 4.1
+    },
+    "goe287": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 4.9
+    },
+    "goe288": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 5.5
+    },
+    "goe289": {
+        "max_thickness_percent": 16.8,
+        "max_camber_percent": 6.1
+    },
+    "goe290": {
+        "max_thickness_percent": 17.6,
+        "max_camber_percent": 3.9
+    },
+    "goe298": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 4.5
+    },
+    "goe29b": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 6.5
+    },
+    "goe300": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 6.7
+    },
+    "goe301": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 6.5
+    },
+    "goe303": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 5.9
+    },
+    "goe304": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 6.3
+    },
+    "goe308": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 5.0
+    },
+    "goe309": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 4.7
+    },
+    "goe310": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 4.8
+    },
+    "goe311": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 6.1
+    },
+    "goe314": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 4.7
+    },
+    "goe315": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 4.1
+    },
+    "goe316": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 4.2
+    },
+    "goe318": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 4.3
+    },
+    "goe319": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 5.8
+    },
+    "goe320": {
+        "max_thickness_percent": 12.3,
+        "max_camber_percent": 6.2
+    },
+    "goe321": {
+        "max_thickness_percent": 11.2,
+        "max_camber_percent": 5.1
+    },
+    "goe322": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 6.0
+    },
+    "goe323": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 5.2
+    },
+    "goe324": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 5.9
+    },
+    "goe325": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 4.6
+    },
+    "goe326": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 4.7
+    },
+    "goe328": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 4.3
+    },
+    "goe329": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 5.5
+    },
+    "goe330": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 5.8
+    },
+    "goe331": {
+        "max_thickness_percent": 10.6,
+        "max_camber_percent": 6.9
+    },
+    "goe332": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 6.4
+    },
+    "goe335": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 4.8
+    },
+    "goe336": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 5.4
+    },
+    "goe342": {
+        "max_thickness_percent": 5.4,
+        "max_camber_percent": 6.2
+    },
+    "goe344": {
+        "max_thickness_percent": 7.2,
+        "max_camber_percent": 2.7
+    },
+    "goe346": {
+        "max_thickness_percent": 5.7,
+        "max_camber_percent": 3.8
+    },
+    "goe358": {
+        "max_thickness_percent": 10.9,
+        "max_camber_percent": 5.6
+    },
+    "goe359": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 5.8
+    },
+    "goe360": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 5.9
+    },
+    "goe361": {
+        "max_thickness_percent": 6.8,
+        "max_camber_percent": 5.5
+    },
+    "goe362": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 5.3
+    },
+    "goe363": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 5.7
+    },
+    "goe364": {
+        "max_thickness_percent": 10.8,
+        "max_camber_percent": 6.5
+    },
+    "goe365": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 5.1
+    },
+    "goe366": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 7.2
+    },
+    "goe367": {
+        "max_thickness_percent": 16.3,
+        "max_camber_percent": 4.6
+    },
+    "goe368": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 3.8
+    },
+    "goe369": {
+        "max_thickness_percent": 5.9,
+        "max_camber_percent": 5.4
+    },
+    "goe370": {
+        "max_thickness_percent": 4.7,
+        "max_camber_percent": 5.7
+    },
+    "goe371": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 4.6
+    },
+    "goe372": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 4.3
+    },
+    "goe373": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 5.1
+    },
+    "goe374": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 4.5
+    },
+    "goe375": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 4.5
+    },
+    "goe376": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 5.0
+    },
+    "goe377": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 3.9
+    },
+    "goe379": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 5.2
+    },
+    "goe380": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 5.6
+    },
+    "goe381": {
+        "max_thickness_percent": 6.4,
+        "max_camber_percent": 5.8
+    },
+    "goe382": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 6.0
+    },
+    "goe383": {
+        "max_thickness_percent": 20.2,
+        "max_camber_percent": 5.0
+    },
+    "goe384": {
+        "max_thickness_percent": 19.6,
+        "max_camber_percent": 6.9
+    },
+    "goe385": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 4.1
+    },
+    "goe386": {
+        "max_thickness_percent": 20.3,
+        "max_camber_percent": 5.4
+    },
+    "goe387": {
+        "max_thickness_percent": 14.9,
+        "max_camber_percent": 5.5
+    },
+    "goe388": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 5.4
+    },
+    "goe389": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 4.0
+    },
+    "goe390": {
+        "max_thickness_percent": 20.3,
+        "max_camber_percent": 6.9
+    },
+    "goe391": {
+        "max_thickness_percent": 5.1,
+        "max_camber_percent": 3.2
+    },
+    "goe392": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 4.8
+    },
+    "goe393": {
+        "max_thickness_percent": 6.1,
+        "max_camber_percent": 4.2
+    },
+    "goe394": {
+        "max_thickness_percent": 6.1,
+        "max_camber_percent": 5.9
+    },
+    "goe395": {
+        "max_thickness_percent": 6.1,
+        "max_camber_percent": 7.0
+    },
+    "goe396": {
+        "max_thickness_percent": 4.7,
+        "max_camber_percent": 5.8
+    },
+    "goe397": {
+        "max_thickness_percent": 5.1,
+        "max_camber_percent": 4.0
+    },
+    "goe398": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 4.9
+    },
+    "goe399": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 4.2
+    },
+    "goe400": {
+        "max_thickness_percent": 6.1,
+        "max_camber_percent": 4.9
+    },
+    "goe401": {
+        "max_thickness_percent": 7.1,
+        "max_camber_percent": 4.9
+    },
+    "goe402": {
+        "max_thickness_percent": 6.8,
+        "max_camber_percent": 5.7
+    },
+    "goe403": {
+        "max_thickness_percent": 6.7,
+        "max_camber_percent": 4.3
+    },
+    "goe404": {
+        "max_thickness_percent": 13.2,
+        "max_camber_percent": 5.0
+    },
+    "goe405": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 6.5
+    },
+    "goe406": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 5.5
+    },
+    "goe407": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 4.8
+    },
+    "goe408": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 4.1
+    },
+    "goe409": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 0.0
+    },
+    "goe410": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 0.0
+    },
+    "goe411": {
+        "max_thickness_percent": 13.2,
+        "max_camber_percent": 0.0
+    },
+    "goe412": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 5.1
+    },
+    "goe413": {
+        "max_thickness_percent": 16.4,
+        "max_camber_percent": 4.6
+    },
+    "goe414": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 5.3
+    },
+    "goe415": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 3.7
+    },
+    "goe416a": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 1.3
+    },
+    "goe417": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 6.1
+    },
+    "goe417a": {
+        "max_thickness_percent": 3.2,
+        "max_camber_percent": 5.9
+    },
+    "goe418": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 5.1
+    },
+    "goe419": {
+        "max_thickness_percent": 5.3,
+        "max_camber_percent": 4.1
+    },
+    "goe420": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 4.3
+    },
+    "goe421": {
+        "max_thickness_percent": 19.0,
+        "max_camber_percent": 8.1
+    },
+    "goe422": {
+        "max_thickness_percent": 17.1,
+        "max_camber_percent": 6.5
+    },
+    "goe423": {
+        "max_thickness_percent": 16.9,
+        "max_camber_percent": 5.1
+    },
+    "goe424": {
+        "max_thickness_percent": 19.9,
+        "max_camber_percent": 4.8
+    },
+    "goe425": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 4.5
+    },
+    "goe426": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 4.6
+    },
+    "goe427": {
+        "max_thickness_percent": 4.6,
+        "max_camber_percent": 5.4
+    },
+    "goe428": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 5.2
+    },
+    "goe429": {
+        "max_thickness_percent": 11.4,
+        "max_camber_percent": 0.2
+    },
+    "goe430": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 4.8
+    },
+    "goe431": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 7.2
+    },
+    "goe432": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 4.3
+    },
+    "goe433": {
+        "max_thickness_percent": 17.4,
+        "max_camber_percent": 4.8
+    },
+    "goe434": {
+        "max_thickness_percent": 22.8,
+        "max_camber_percent": 5.2
+    },
+    "goe435": {
+        "max_thickness_percent": 26.1,
+        "max_camber_percent": 4.7
+    },
+    "goe436": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 3.8
+    },
+    "goe437": {
+        "max_thickness_percent": 7.1,
+        "max_camber_percent": 4.8
+    },
+    "goe438": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 3.8
+    },
+    "goe439": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 5.2
+    },
+    "goe440": {
+        "max_thickness_percent": 15.3,
+        "max_camber_percent": 9.7
+    },
+    "goe441": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 7.7
+    },
+    "goe442": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 4.3
+    },
+    "goe443": {
+        "max_thickness_percent": 5.0,
+        "max_camber_percent": 0.0
+    },
+    "goe444": {
+        "max_thickness_percent": 5.6,
+        "max_camber_percent": 0.0
+    },
+    "goe445": {
+        "max_thickness_percent": 6.4,
+        "max_camber_percent": 0.0
+    },
+    "goe446": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 6.3
+    },
+    "goe447": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 8.0
+    },
+    "goe448": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 10.5
+    },
+    "goe449": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 5.4
+    },
+    "goe450": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 5.2
+    },
+    "goe451": {
+        "max_thickness_percent": 4.4,
+        "max_camber_percent": 5.6
+    },
+    "goe456": {
+        "max_thickness_percent": 7.2,
+        "max_camber_percent": 5.2
+    },
+    "goe457": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 4.2
+    },
+    "goe458": {
+        "max_thickness_percent": 7.2,
+        "max_camber_percent": 5.2
+    },
+    "goe459": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 0.0
+    },
+    "goe460": {
+        "max_thickness_percent": 20.5,
+        "max_camber_percent": 0.0
+    },
+    "goe462": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 13.4
+    },
+    "goe464": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 9.9
+    },
+    "goe474": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 2.9
+    },
+    "goe476": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 5.2
+    },
+    "goe477": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 4.9
+    },
+    "goe478": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 4.3
+    },
+    "goe479": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 4.0
+    },
+    "goe480": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 5.5
+    },
+    "goe481": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 8.8
+    },
+    "goe481a": {
+        "max_thickness_percent": 15.3,
+        "max_camber_percent": 5.5
+    },
+    "goe482": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 8.8
+    },
+    "goe483": {
+        "max_thickness_percent": 5.5,
+        "max_camber_percent": 5.8
+    },
+    "goe484": {
+        "max_thickness_percent": 6.3,
+        "max_camber_percent": 5.0
+    },
+    "goe488": {
+        "max_thickness_percent": 6.8,
+        "max_camber_percent": 3.0
+    },
+    "goe490": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 3.8
+    },
+    "goe491": {
+        "max_thickness_percent": 4.9,
+        "max_camber_percent": 2.9
+    },
+    "goe492": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 3.4
+    },
+    "goe493": {
+        "max_thickness_percent": 14.9,
+        "max_camber_percent": 3.4
+    },
+    "goe494": {
+        "max_thickness_percent": 5.0,
+        "max_camber_percent": 5.1
+    },
+    "goe495": {
+        "max_thickness_percent": 6.9,
+        "max_camber_percent": 5.0
+    },
+    "goe496": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 5.0
+    },
+    "goe497": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 5.3
+    },
+    "goe498": {
+        "max_thickness_percent": 15.9,
+        "max_camber_percent": 5.5
+    },
+    "goe499": {
+        "max_thickness_percent": 6.8,
+        "max_camber_percent": 5.9
+    },
+    "goe500": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 6.0
+    },
+    "goe501": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 6.3
+    },
+    "goe502": {
+        "max_thickness_percent": 15.9,
+        "max_camber_percent": 6.1
+    },
+    "goe503": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 7.0
+    },
+    "goe504": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 5.4
+    },
+    "goe505": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 5.9
+    },
+    "goe506": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 4.7
+    },
+    "goe507": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 2.9
+    },
+    "goe508": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 5.6
+    },
+    "goe509": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 5.2
+    },
+    "goe510": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 5.8
+    },
+    "goe511": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 8.0
+    },
+    "goe512": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 5.6
+    },
+    "goe513": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 5.2
+    },
+    "goe514": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 6.4
+    },
+    "goe515": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 2.8
+    },
+    "goe517": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 4.7
+    },
+    "goe518": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 7.3
+    },
+    "goe522": {
+        "max_thickness_percent": 21.8,
+        "max_camber_percent": 5.2
+    },
+    "goe523": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 9.7
+    },
+    "goe525": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 9.7
+    },
+    "goe526": {
+        "max_thickness_percent": 12.3,
+        "max_camber_percent": 4.1
+    },
+    "goe527": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 5.8
+    },
+    "goe528": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 6.2
+    },
+    "goe529": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 5.8
+    },
+    "goe530": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 5.1
+    },
+    "goe531": {
+        "max_thickness_percent": 13.8,
+        "max_camber_percent": 14.7
+    },
+    "goe532": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 4.8
+    },
+    "goe533": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 4.7
+    },
+    "goe534": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 5.2
+    },
+    "goe535": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 5.8
+    },
+    "goe54": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 3.5
+    },
+    "goe546": {
+        "max_thickness_percent": 10.4,
+        "max_camber_percent": 3.6
+    },
+    "goe547": {
+        "max_thickness_percent": 10.5,
+        "max_camber_percent": 4.0
+    },
+    "goe548": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 2.3
+    },
+    "goe549": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 4.7
+    },
+    "goe55": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 2.0
+    },
+    "goe550": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 4.3
+    },
+    "goe553": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 4.7
+    },
+    "goe559": {
+        "max_thickness_percent": 11.2,
+        "max_camber_percent": 3.4
+    },
+    "goe561": {
+        "max_thickness_percent": 25.0,
+        "max_camber_percent": 10.2
+    },
+    "goe562": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 6.3
+    },
+    "goe563": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 2.2
+    },
+    "goe564": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 2.7
+    },
+    "goe565": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 2.8
+    },
+    "goe566": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 2.6
+    },
+    "goe567": {
+        "max_thickness_percent": 14.8,
+        "max_camber_percent": 5.3
+    },
+    "goe57": {
+        "max_thickness_percent": 6.3,
+        "max_camber_percent": 5.1
+    },
+    "goe570": {
+        "max_thickness_percent": 33.7,
+        "max_camber_percent": 9.7
+    },
+    "goe571": {
+        "max_thickness_percent": 24.9,
+        "max_camber_percent": 9.8
+    },
+    "goe572": {
+        "max_thickness_percent": 18.6,
+        "max_camber_percent": 8.3
+    },
+    "goe573": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 6.5
+    },
+    "goe574": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 4.9
+    },
+    "goe575": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 3.6
+    },
+    "goe584": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 5.0
+    },
+    "goe585": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 3.4
+    },
+    "goe587": {
+        "max_thickness_percent": 5.8,
+        "max_camber_percent": 3.0
+    },
+    "goe590": {
+        "max_thickness_percent": 5.7,
+        "max_camber_percent": 4.0
+    },
+    "goe591": {
+        "max_thickness_percent": 11.2,
+        "max_camber_percent": 5.1
+    },
+    "goe592": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 7.5
+    },
+    "goe593": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 4.1
+    },
+    "goe595": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 3.0
+    },
+    "goe596": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 4.0
+    },
+    "goe598": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 1.0
+    },
+    "goe599": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.5
+    },
+    "goe600": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 1.9
+    },
+    "goe601": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 2.5
+    },
+    "goe602": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.5
+    },
+    "goe602m": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 3.8
+    },
+    "goe604": {
+        "max_thickness_percent": 17.8,
+        "max_camber_percent": 5.4
+    },
+    "goe610b": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 5.3
+    },
+    "goe610bm": {
+        "max_thickness_percent": 7.7,
+        "max_camber_percent": 5.5
+    },
+    "goe611": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 5.8
+    },
+    "goe612": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 5.0
+    },
+    "goe613": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 4.1
+    },
+    "goe614": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 6.2
+    },
+    "goe615": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 5.6
+    },
+    "goe617": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 2.2
+    },
+    "goe619": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 4.5
+    },
+    "goe620": {
+        "max_thickness_percent": 17.5,
+        "max_camber_percent": 5.9
+    },
+    "goe621": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 5.0
+    },
+    "goe622": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.4
+    },
+    "goe623": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.8
+    },
+    "goe624": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 5.2
+    },
+    "goe625": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 6.1
+    },
+    "goe626": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 5.1
+    },
+    "goe627": {
+        "max_thickness_percent": 15.8,
+        "max_camber_percent": 4.1
+    },
+    "goe628": {
+        "max_thickness_percent": 16.7,
+        "max_camber_percent": 5.6
+    },
+    "goe629": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 2.8
+    },
+    "goe63": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 6.7
+    },
+    "goe630": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 7.7
+    },
+    "goe632": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 3.9
+    },
+    "goe633": {
+        "max_thickness_percent": 13.8,
+        "max_camber_percent": 4.0
+    },
+    "goe645": {
+        "max_thickness_percent": 15.4,
+        "max_camber_percent": 4.8
+    },
+    "goe646": {
+        "max_thickness_percent": 18.3,
+        "max_camber_percent": 4.5
+    },
+    "goe647": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 5.3
+    },
+    "goe648": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 3.9
+    },
+    "goe650": {
+        "max_thickness_percent": 13.4,
+        "max_camber_percent": 4.4
+    },
+    "goe652": {
+        "max_thickness_percent": 17.1,
+        "max_camber_percent": 9.3
+    },
+    "goe654": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 5.2
+    },
+    "goe655": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 4.4
+    },
+    "goe670": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 3.4
+    },
+    "goe673": {
+        "max_thickness_percent": 10.8,
+        "max_camber_percent": 2.8
+    },
+    "goe675": {
+        "max_thickness_percent": 14.9,
+        "max_camber_percent": 5.9
+    },
+    "goe676": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 2.0
+    },
+    "goe677": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.2
+    },
+    "goe679": {
+        "max_thickness_percent": 18.3,
+        "max_camber_percent": 4.5
+    },
+    "goe681": {
+        "max_thickness_percent": 16.8,
+        "max_camber_percent": 4.4
+    },
+    "goe682": {
+        "max_thickness_percent": 10.7,
+        "max_camber_percent": 4.3
+    },
+    "goe683": {
+        "max_thickness_percent": 19.9,
+        "max_camber_percent": 3.0
+    },
+    "goe685": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 4.2
+    },
+    "goe692": {
+        "max_thickness_percent": 16.1,
+        "max_camber_percent": 5.0
+    },
+    "goe693": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.6
+    },
+    "goe701": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 4.9
+    },
+    "goe702": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 5.1
+    },
+    "goe703": {
+        "max_thickness_percent": 19.4,
+        "max_camber_percent": 2.3
+    },
+    "goe704": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 2.1
+    },
+    "goe711": {
+        "max_thickness_percent": 14.9,
+        "max_camber_percent": 6.3
+    },
+    "goe723": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 4.5
+    },
+    "goe735": {
+        "max_thickness_percent": 20.1,
+        "max_camber_percent": 4.4
+    },
+    "goe738": {
+        "max_thickness_percent": 15.4,
+        "max_camber_percent": 2.1
+    },
+    "goe741": {
+        "max_thickness_percent": 15.3,
+        "max_camber_percent": 4.8
+    },
+    "goe744": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 7.0
+    },
+    "goe746": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 5.0
+    },
+    "goe758": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 4.7
+    },
+    "goe765": {
+        "max_thickness_percent": 14.4,
+        "max_camber_percent": 1.9
+    },
+    "goe766": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.5
+    },
+    "goe767": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.5
+    },
+    "goe769": {
+        "max_thickness_percent": 13.8,
+        "max_camber_percent": 4.8
+    },
+    "goe770": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 4.0
+    },
+    "goe775": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 0.0
+    },
+    "goe776": {
+        "max_thickness_percent": 25.0,
+        "max_camber_percent": 0.0
+    },
+    "goe777": {
+        "max_thickness_percent": 22.0,
+        "max_camber_percent": 5.9
+    },
+    "goe780": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.0
+    },
+    "goe79": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 6.0
+    },
+    "goe795": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.4
+    },
+    "goe795sm": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.4
+    },
+    "goe796": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.6
+    },
+    "goe797": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 4.9
+    },
+    "goe798": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 6.0
+    },
+    "goe801": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 6.1
+    },
+    "goe802": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 6.1
+    },
+    "goe802a": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 6.1
+    },
+    "goe802b": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 6.1
+    },
+    "goe803h": {
+        "max_thickness_percent": 6.3,
+        "max_camber_percent": 6.6
+    },
+    "goe804": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 6.3
+    },
+    "goe81": {
+        "max_thickness_percent": 7.4,
+        "max_camber_percent": 6.3
+    },
+    "goe92": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 5.5
+    },
+    "griffith30SymSuction": {
+        "max_thickness_percent": 30.6,
+        "max_camber_percent": 0.0
+    },
+    "gs1": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 4.1
+    },
+    "gu255118": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 7.1
+    },
+    "hh02": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 2.0
+    },
+    "hobie": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 4.0
+    },
+    "hobiesm": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 3.8
+    },
+    "hq010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "hq07": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 0.0
+    },
+    "hq09": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 0.0
+    },
+    "hq1010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.0
+    },
+    "hq1012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.0
+    },
+    "hq108": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.0
+    },
+    "hq109": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.0
+    },
+    "hq1510": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.5
+    },
+    "hq1511": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 1.5
+    },
+    "hq1512": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.5
+    },
+    "hq158": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.5
+    },
+    "hq1585": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 1.5
+    },
+    "hq159": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.5
+    },
+    "hq159b": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.5
+    },
+    "hq2010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.0
+    },
+    "hq2012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.0
+    },
+    "hq208": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.0
+    },
+    "hq209": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.0
+    },
+    "hq2090sm": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.0
+    },
+    "hq2195": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 2.1
+    },
+    "hq2510": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.5
+    },
+    "hq2511": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.5
+    },
+    "hq2512": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.5
+    },
+    "hq258": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.5
+    },
+    "hq259": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.5
+    },
+    "hq2590sm": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.5
+    },
+    "hq259b": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.5
+    },
+    "hq300gd2": {
+        "max_thickness_percent": 16.6,
+        "max_camber_percent": 3.9
+    },
+    "hq3010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.0
+    },
+    "hq3011": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 3.0
+    },
+    "hq3012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.0
+    },
+    "hq3013": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 3.0
+    },
+    "hq3014": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 3.0
+    },
+    "hq3015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.0
+    },
+    "hq308": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 3.0
+    },
+    "hq309": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 3.0
+    },
+    "hq3510": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.5
+    },
+    "hq3512": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.5
+    },
+    "hq3513": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 3.5
+    },
+    "hq3514": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 3.5
+    },
+    "hq3518": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 3.5
+    },
+    "hq358": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 3.5
+    },
+    "hq359": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 3.5
+    },
+    "hsnlf213": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 1.4
+    },
+    "ht05": {
+        "max_thickness_percent": 4.8,
+        "max_camber_percent": 0.0
+    },
+    "ht08": {
+        "max_thickness_percent": 5.0,
+        "max_camber_percent": 0.0
+    },
+    "ht12": {
+        "max_thickness_percent": 5.0,
+        "max_camber_percent": 0.0
+    },
+    "ht22": {
+        "max_thickness_percent": 5.1,
+        "max_camber_percent": 1.1
+    },
+    "ht23": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 1.1
+    },
+    "isa571": {
+        "max_thickness_percent": 7.4,
+        "max_camber_percent": 3.6
+    },
+    "isa960": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 4.5
+    },
+    "isa961": {
+        "max_thickness_percent": 9.3,
+        "max_camber_percent": 4.6
+    },
+    "isa962": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 4.6
+    },
+    "j5012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "jn153": {
+        "max_thickness_percent": 17.6,
+        "max_camber_percent": 8.4
+    },
+    "joukowsk": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 0.0
+    },
+    "k1": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 1.9
+    },
+    "k2": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 1.3
+    },
+    "k3": {
+        "max_thickness_percent": 17.3,
+        "max_camber_percent": 2.6
+    },
+    "k3311": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 3.3
+    },
+    "k3311sm": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 3.2
+    },
+    "kc135a": {
+        "max_thickness_percent": 15.5,
+        "max_camber_percent": 1.3
+    },
+    "kc135b": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 1.4
+    },
+    "kc135c": {
+        "max_thickness_percent": 10.6,
+        "max_camber_percent": 1.5
+    },
+    "kc135d": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.9
+    },
+    "kenmar": {
+        "max_thickness_percent": 27.9,
+        "max_camber_percent": 7.7
+    },
+    "l188root": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 2.0
+    },
+    "l188tip": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.7
+    },
+    "l7769": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 4.4
+    },
+    "la2573a": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 3.2
+    },
+    "la203a": {
+        "max_thickness_percent": 15.7,
+        "max_camber_percent": 5.5
+    },
+    "lds2": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.2
+    },
+    "lg10sc": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.5
+    },
+    "lnv109a": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 6.0
+    },
+    "lrn1007": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 5.9
+    },
+    "ls013": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 0.0
+    },
+    "ls413": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 2.4
+    },
+    "ls413mod": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 2.2
+    },
+    "ls417": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 2.4
+    },
+    "ls417mod": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 2.3
+    },
+    "ls421": {
+        "max_thickness_percent": 20.9,
+        "max_camber_percent": 2.4
+    },
+    "ls421mod": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 2.3
+    },
+    "lwk79100": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "lwk80080": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 0.0
+    },
+    "lwk80100": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 0.0
+    },
+    "lwk80120k25": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 0.0
+    },
+    "lwk80150k25": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "m1": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 0.0
+    },
+    "m10": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 1.9
+    },
+    "m11": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 1.9
+    },
+    "m12": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 2.0
+    },
+    "m13": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 3.8
+    },
+    "m14": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 3.9
+    },
+    "m15": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.8
+    },
+    "m16": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 4.1
+    },
+    "m17": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 4.1
+    },
+    "m18": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 4.1
+    },
+    "m19": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 6.0
+    },
+    "m2": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.0
+    },
+    "m20": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 6.1
+    },
+    "m21": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 6.0
+    },
+    "m22": {
+        "max_thickness_percent": 6.3,
+        "max_camber_percent": 6.3
+    },
+    "m23": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 6.4
+    },
+    "m24": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 6.3
+    },
+    "m25": {
+        "max_thickness_percent": 6.3,
+        "max_camber_percent": 8.2
+    },
+    "m26": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 8.3
+    },
+    "m27": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 8.4
+    },
+    "m3": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 0.0
+    },
+    "m4": {
+        "max_thickness_percent": 6.3,
+        "max_camber_percent": 2.2
+    },
+    "m5": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 2.1
+    },
+    "m6": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.2
+    },
+    "m665": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 1.4
+    },
+    "m685": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 1.9
+    },
+    "m7": {
+        "max_thickness_percent": 6.2,
+        "max_camber_percent": 4.9
+    },
+    "ma409": {
+        "max_thickness_percent": 6.8,
+        "max_camber_percent": 3.3
+    },
+    "ma409sm": {
+        "max_thickness_percent": 6.7,
+        "max_camber_percent": 3.3
+    },
+    "marsden": {
+        "max_thickness_percent": 27.9,
+        "max_camber_percent": 7.7
+    },
+    "marske1": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 3.0
+    },
+    "marske2": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 2.7
+    },
+    "marske3": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 2.8
+    },
+    "marske4": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 2.8
+    },
+    "marske5": {
+        "max_thickness_percent": 12.2,
+        "max_camber_percent": 3.4
+    },
+    "marske7": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 2.8
+    },
+    "mb253515sm": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.5
+    },
+    "mh102": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 2.8
+    },
+    "mh104": {
+        "max_thickness_percent": 15.2,
+        "max_camber_percent": 1.9
+    },
+    "mh106": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 0.9
+    },
+    "mh108": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 1.0
+    },
+    "mh110": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.0
+    },
+    "mh112": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 6.7
+    },
+    "mh113": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 6.4
+    },
+    "mh114": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 6.4
+    },
+    "mh115": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 5.5
+    },
+    "mh116": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 4.1
+    },
+    "mh117": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 2.7
+    },
+    "mh120": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 2.2
+    },
+    "mh121": {
+        "max_thickness_percent": 8.8,
+        "max_camber_percent": 3.0
+    },
+    "mh122": {
+        "max_thickness_percent": 9.3,
+        "max_camber_percent": 3.4
+    },
+    "mh150": {
+        "max_thickness_percent": 23.9,
+        "max_camber_percent": 4.5
+    },
+    "mh18": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 2.7
+    },
+    "mh20": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.9
+    },
+    "mh200": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 2.1
+    },
+    "mh201": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 2.5
+    },
+    "mh22": {
+        "max_thickness_percent": 7.2,
+        "max_camber_percent": 1.8
+    },
+    "mh23": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.2
+    },
+    "mh24": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.2
+    },
+    "mh25": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.4
+    },
+    "mh26": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 1.4
+    },
+    "mh27": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.4
+    },
+    "mh30": {
+        "max_thickness_percent": 7.8,
+        "max_camber_percent": 1.7
+    },
+    "mh32": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 2.3
+    },
+    "mh33": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 1.1
+    },
+    "mh38": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 3.9
+    },
+    "mh42": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 1.8
+    },
+    "mh43": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.7
+    },
+    "mh44": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 1.5
+    },
+    "mh45": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 1.7
+    },
+    "mh46": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 1.4
+    },
+    "mh60": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 1.7
+    },
+    "mh61": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 1.4
+    },
+    "mh62": {
+        "max_thickness_percent": 9.3,
+        "max_camber_percent": 1.6
+    },
+    "mh64": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 1.4
+    },
+    "mh70": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 3.0
+    },
+    "mh78": {
+        "max_thickness_percent": 14.4,
+        "max_camber_percent": 1.9
+    },
+    "mh80": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 2.8
+    },
+    "mh81": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 3.3
+    },
+    "mh82": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 3.9
+    },
+    "mh83": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 4.5
+    },
+    "mh84": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 4.1
+    },
+    "mh91": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.4
+    },
+    "mh92": {
+        "max_thickness_percent": 15.5,
+        "max_camber_percent": 1.4
+    },
+    "mh93": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 1.4
+    },
+    "mh94": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 1.3
+    },
+    "mh95": {
+        "max_thickness_percent": 15.8,
+        "max_camber_percent": 0.9
+    },
+    "miley": {
+        "max_thickness_percent": 12.9,
+        "max_camber_percent": 4.9
+    },
+    "mrc-16": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 3.0
+    },
+    "mrc-20": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 2.9
+    },
+    "ms313": {
+        "max_thickness_percent": 13.1,
+        "max_camber_percent": 1.8
+    },
+    "ms317": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 1.7
+    },
+    "mue139": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 4.7
+    },
+    "n0009sm": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 0.0
+    },
+    "n0011sc": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 0.0
+    },
+    "n0012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "n10": {
+        "max_thickness_percent": 11.2,
+        "max_camber_percent": 3.6
+    },
+    "n11": {
+        "max_thickness_percent": 10.9,
+        "max_camber_percent": 4.4
+    },
+    "n11h9": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 4.5
+    },
+    "n12": {
+        "max_thickness_percent": 10.5,
+        "max_camber_percent": 0.2
+    },
+    "n13": {
+        "max_thickness_percent": 11.8,
+        "max_camber_percent": 0.1
+    },
+    "n14": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 0.1
+    },
+    "n1h15": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 5.5
+    },
+    "n22": {
+        "max_thickness_percent": 12.4,
+        "max_camber_percent": 4.0
+    },
+    "n24": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 5.4
+    },
+    "n2414": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 2.0
+    },
+    "n2415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.0
+    },
+    "n2h15": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 4.5
+    },
+    "n5h10": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 2.3
+    },
+    "n5h15": {
+        "max_thickness_percent": 15.4,
+        "max_camber_percent": 2.9
+    },
+    "n5h20": {
+        "max_thickness_percent": 19.9,
+        "max_camber_percent": 4.5
+    },
+    "n63010a": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "n63012a": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "n63015a": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "n63210": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.1
+    },
+    "n63212": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.1
+    },
+    "n63215": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.1
+    },
+    "n63215b": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.5
+    },
+    "n63412": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.2
+    },
+    "n63415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.2
+    },
+    "n64008a": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.0
+    },
+    "n64012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "n64012a": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "n64015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "n64015a": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "n6409": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 6.0
+    },
+    "n64108": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.6
+    },
+    "n64110": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.6
+    },
+    "n64212": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.1
+    },
+    "n64212ma": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.5
+    },
+    "n64212mb": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.5
+    },
+    "n64215": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.1
+    },
+    "n66021": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 0.0
+    },
+    "n6h10": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 4.6
+    },
+    "n6h15": {
+        "max_thickness_percent": 15.6,
+        "max_camber_percent": 4.5
+    },
+    "n6h20": {
+        "max_thickness_percent": 20.0,
+        "max_camber_percent": 6.1
+    },
+    "n8h12": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.5
+    },
+    "n9": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 2.7
+    },
+    "naca0006": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 0.0
+    },
+    "naca0008": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.0
+    },
+    "naca000834": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.0
+    },
+    "naca0010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "naca001034": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "naca001035": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "naca001064": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "naca001065": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "naca001066": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "naca001234": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "naca001264": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "naca0015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "naca0018": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 0.0
+    },
+    "naca0021": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 0.0
+    },
+    "naca0024": {
+        "max_thickness_percent": 24.0,
+        "max_camber_percent": 0.0
+    },
+    "naca1408": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.0
+    },
+    "naca1410": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.0
+    },
+    "naca1412": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.0
+    },
+    "naca16006": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 0.0
+    },
+    "naca16009": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 0.0
+    },
+    "naca16012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "naca16015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 0.0
+    },
+    "naca16018": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 0.0
+    },
+    "naca16021": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 0.0
+    },
+    "naca23012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.8
+    },
+    "naca23015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.8
+    },
+    "naca23018": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 1.8
+    },
+    "naca23021": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 1.9
+    },
+    "naca23024": {
+        "max_thickness_percent": 24.0,
+        "max_camber_percent": 2.9
+    },
+    "naca2408": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 2.0
+    },
+    "naca2410": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.0
+    },
+    "naca2411": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.5
+    },
+    "naca2412": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.0
+    },
+    "naca2415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.0
+    },
+    "naca2418": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 2.0
+    },
+    "naca2421": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 2.0
+    },
+    "naca2424": {
+        "max_thickness_percent": 24.0,
+        "max_camber_percent": 2.0
+    },
+    "naca4412": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 4.0
+    },
+    "naca4415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.0
+    },
+    "naca4418": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 4.0
+    },
+    "naca4421": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 4.0
+    },
+    "naca4424": {
+        "max_thickness_percent": 24.0,
+        "max_camber_percent": 4.0
+    },
+    "naca63206": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.1
+    },
+    "naca63209": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.1
+    },
+    "naca632615": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.3
+    },
+    "naca632a015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.7
+    },
+    "naca633018": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 0.0
+    },
+    "naca633218": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 1.1
+    },
+    "naca633418": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 2.2
+    },
+    "naca633618": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 3.3
+    },
+    "naca634221": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 1.1
+    },
+    "naca634421": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 2.2
+    },
+    "naca63a210": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.3
+    },
+    "naca641112": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.6
+    },
+    "naca6412": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 6.0
+    },
+    "naca64206": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.1
+    },
+    "naca64208": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.1
+    },
+    "naca64209": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.1
+    },
+    "naca64210": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.1
+    },
+    "naca642215": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.1
+    },
+    "naca642415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.2
+    },
+    "naca643218": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 1.1
+    },
+    "naca643418": {
+        "max_thickness_percent": 17.9,
+        "max_camber_percent": 2.2
+    },
+    "naca643618": {
+        "max_thickness_percent": 17.9,
+        "max_camber_percent": 3.3
+    },
+    "naca644221": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 1.1
+    },
+    "naca644421": {
+        "max_thickness_percent": 20.9,
+        "max_camber_percent": 2.2
+    },
+    "naca64a010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "naca64a210": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.3
+    },
+    "naca64a410": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.7
+    },
+    "naca651212": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.1
+    },
+    "naca651212a06": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.5
+    },
+    "naca651412": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.2
+    },
+    "naca65206": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.1
+    },
+    "naca65209": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.1
+    },
+    "naca65210": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.1
+    },
+    "naca652215": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.1
+    },
+    "naca652415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.2
+    },
+    "naca652415a05": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.0
+    },
+    "naca653218": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 1.1
+    },
+    "naca653618": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 3.3
+    },
+    "naca65410": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.2
+    },
+    "naca654221": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 1.1
+    },
+    "naca654421": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 2.2
+    },
+    "naca654421a05": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 3.0
+    },
+    "naca66-018": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 0.0
+    },
+    "naca661212": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.1
+    },
+    "naca66206": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.1
+    },
+    "naca66209": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.1
+    },
+    "naca66210": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.1
+    },
+    "naca662215": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.1
+    },
+    "naca662415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.2
+    },
+    "naca663218": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 1.1
+    },
+    "naca663418": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 2.2
+    },
+    "naca664221": {
+        "max_thickness_percent": 21.0,
+        "max_camber_percent": 1.1
+    },
+    "naca671215": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.1
+    },
+    "naca747a315": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.5
+    },
+    "naca747a415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.0
+    },
+    "nacacyh": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 2.8
+    },
+    "nacam12": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 2.0
+    },
+    "nacam18": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 4.1
+    },
+    "nacam2": {
+        "max_thickness_percent": 8.1,
+        "max_camber_percent": 0.0
+    },
+    "nacam3": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 0.0
+    },
+    "nacam6": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.1
+    },
+    "nasasc2-0714": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 2.5
+    },
+    "ncambre": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 1.4
+    },
+    "nl722343": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 1.3
+    },
+    "nl722362": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 1.3
+    },
+    "nlf0115": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 1.8
+    },
+    "nlf0215f": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.0
+    },
+    "nlf1015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 4.3
+    },
+    "nlf414f": {
+        "max_thickness_percent": 14.2,
+        "max_camber_percent": 2.4
+    },
+    "nlf415": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.0
+    },
+    "nlf416": {
+        "max_thickness_percent": 15.9,
+        "max_camber_percent": 2.5
+    },
+    "nlr1t": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 1.3
+    },
+    "nlr7301": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 1.7
+    },
+    "nn7mk20": {
+        "max_thickness_percent": 16.9,
+        "max_camber_percent": 3.0
+    },
+    "npl9510": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 1.6
+    },
+    "npl9615": {
+        "max_thickness_percent": 11.3,
+        "max_camber_percent": 1.0
+    },
+    "npl9626": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 0.7
+    },
+    "npl9627": {
+        "max_thickness_percent": 12.2,
+        "max_camber_percent": 0.9
+    },
+    "npl9660": {
+        "max_thickness_percent": 11.3,
+        "max_camber_percent": 1.0
+    },
+    "nplx": {
+        "max_thickness_percent": 10.7,
+        "max_camber_percent": 1.1
+    },
+    "oa206": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 0.8
+    },
+    "oa209": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.6
+    },
+    "oa212": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.3
+    },
+    "oa213": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 3.3
+    },
+    "oaf095": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 3.9
+    },
+    "oaf102": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 3.6
+    },
+    "oaf117": {
+        "max_thickness_percent": 11.5,
+        "max_camber_percent": 2.0
+    },
+    "oaf128": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 1.0
+    },
+    "oaf139": {
+        "max_thickness_percent": 13.7,
+        "max_camber_percent": 0.0
+    },
+    "p51droot": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 1.3
+    },
+    "p51dtip": {
+        "max_thickness_percent": 11.4,
+        "max_camber_percent": 1.3
+    },
+    "p51hroot": {
+        "max_thickness_percent": 15.5,
+        "max_camber_percent": 1.3
+    },
+    "p51htip": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.3
+    },
+    "pfcm": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 1.3
+    },
+    "pmc19sm": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 2.1
+    },
+    "psu-90-125wl": {
+        "max_thickness_percent": 12.5,
+        "max_camber_percent": 2.0
+    },
+    "psu94097": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 4.0
+    },
+    "pt40": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 2.9
+    },
+    "r1046": {
+        "max_thickness_percent": 18.1,
+        "max_camber_percent": 6.7
+    },
+    "r1080": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 3.3
+    },
+    "r1082": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 3.4
+    },
+    "r1082t": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 3.0
+    },
+    "r140": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.5
+    },
+    "r140sm": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.4
+    },
+    "rae100": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "rae101": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "rae102": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "rae103": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "rae104": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "rae2822": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 1.3
+    },
+    "rae5212": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 1.8
+    },
+    "rae5213": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.4
+    },
+    "rae5214": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 1.4
+    },
+    "rae5215": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 1.5
+    },
+    "rae69ck": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 1.3
+    },
+    "raf15": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 2.6
+    },
+    "raf19": {
+        "max_thickness_percent": 10.5,
+        "max_camber_percent": 10.1
+    },
+    "raf25": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 1.0
+    },
+    "raf26": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 2.1
+    },
+    "raf27": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 0.0
+    },
+    "raf28": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 1.9
+    },
+    "raf30": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 0.0
+    },
+    "raf30md": {
+        "max_thickness_percent": 7.6,
+        "max_camber_percent": 0.0
+    },
+    "raf31": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 2.1
+    },
+    "raf32": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 5.0
+    },
+    "raf32md": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 4.0
+    },
+    "raf33": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 4.7
+    },
+    "raf34": {
+        "max_thickness_percent": 12.6,
+        "max_camber_percent": 2.0
+    },
+    "raf38": {
+        "max_thickness_percent": 12.7,
+        "max_camber_percent": 2.5
+    },
+    "raf48": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 2.9
+    },
+    "raf6": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 4.6
+    },
+    "raf69": {
+        "max_thickness_percent": 20.6,
+        "max_camber_percent": 1.7
+    },
+    "raf89": {
+        "max_thickness_percent": 25.0,
+        "max_camber_percent": 1.6
+    },
+    "rc0864c": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.0
+    },
+    "rc08b3": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.1
+    },
+    "rc08n1": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.6
+    },
+    "rc1064c": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.0
+    },
+    "rc10b3": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.7
+    },
+    "rc10n1": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.5
+    },
+    "rc1264c": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.0
+    },
+    "rc12b3": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.2
+    },
+    "rc12n1": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.4
+    },
+    "rc410": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.1
+    },
+    "rc510": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.2
+    },
+    "rcsc2": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.5
+    },
+    "rg12": {
+        "max_thickness_percent": 9.3,
+        "max_camber_percent": 1.4
+    },
+    "rg12a": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.8
+    },
+    "rg12a189": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.8
+    },
+    "rg14": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.6
+    },
+    "rg1410": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.6
+    },
+    "rg149": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.6
+    },
+    "rg1495": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 1.6
+    },
+    "rg14a147": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 1.4
+    },
+    "rg15": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 1.8
+    },
+    "rg15a111": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 1.8
+    },
+    "rg15a213": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 2.5
+    },
+    "rg8": {
+        "max_thickness_percent": 10.8,
+        "max_camber_percent": 2.2
+    },
+    "rhodesg30": {
+        "max_thickness_percent": 9.7,
+        "max_camber_percent": 3.2
+    },
+    "rhodesg32": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 3.9
+    },
+    "rhodesg34": {
+        "max_thickness_percent": 14.1,
+        "max_camber_percent": 4.6
+    },
+    "rhodesg36": {
+        "max_thickness_percent": 16.2,
+        "max_camber_percent": 5.4
+    },
+    "s1010": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 0.0
+    },
+    "s1012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "s1014": {
+        "max_thickness_percent": 16.5,
+        "max_camber_percent": 0.0
+    },
+    "s1016": {
+        "max_thickness_percent": 17.5,
+        "max_camber_percent": 0.0
+    },
+    "s1020": {
+        "max_thickness_percent": 15.1,
+        "max_camber_percent": 4.6
+    },
+    "s1046": {
+        "max_thickness_percent": 17.0,
+        "max_camber_percent": 0.0
+    },
+    "s1048": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 0.0
+    },
+    "s1091": {
+        "max_thickness_percent": 5.1,
+        "max_camber_percent": 5.7
+    },
+    "s1210": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 6.7
+    },
+    "s1221": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 4.9
+    },
+    "s1223": {
+        "max_thickness_percent": 12.1,
+        "max_camber_percent": 8.1
+    },
+    "s1223rtl": {
+        "max_thickness_percent": 13.5,
+        "max_camber_percent": 8.3
+    },
+    "s2027": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 2.7
+    },
+    "s2046": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.6
+    },
+    "s2048": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 1.7
+    },
+    "s2050": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 1.1
+    },
+    "s2055": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.4
+    },
+    "s2060": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.6
+    },
+    "s2062": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.5
+    },
+    "s2091": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 3.7
+    },
+    "s3": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 1.8
+    },
+    "s3002": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 2.3
+    },
+    "s3010": {
+        "max_thickness_percent": 10.3,
+        "max_camber_percent": 2.3
+    },
+    "s3014": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 2.6
+    },
+    "s3016": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 1.8
+    },
+    "s3021": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 2.5
+    },
+    "s3024": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 3.0
+    },
+    "s3025": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 3.0
+    },
+    "s4022": {
+        "max_thickness_percent": 11.3,
+        "max_camber_percent": 4.3
+    },
+    "s4053": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 3.0
+    },
+    "s4061": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 3.3
+    },
+    "s4062": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 4.0
+    },
+    "s4083": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 3.4
+    },
+    "s4110": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 3.1
+    },
+    "s4158": {
+        "max_thickness_percent": 10.9,
+        "max_camber_percent": 3.7
+    },
+    "s4180": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 4.0
+    },
+    "s4233": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 2.7
+    },
+    "s4310": {
+        "max_thickness_percent": 10.9,
+        "max_camber_percent": 4.2
+    },
+    "s4320": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 4.5
+    },
+    "s5010": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 1.8
+    },
+    "s5020": {
+        "max_thickness_percent": 8.4,
+        "max_camber_percent": 2.2
+    },
+    "s6061": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.5
+    },
+    "s6062": {
+        "max_thickness_percent": 7.9,
+        "max_camber_percent": 1.4
+    },
+    "s6063": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 1.3
+    },
+    "s7012": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 1.7
+    },
+    "s7055": {
+        "max_thickness_percent": 10.5,
+        "max_camber_percent": 3.3
+    },
+    "s7075": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.8
+    },
+    "s8025": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.4
+    },
+    "s8035": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 0.0
+    },
+    "s8036": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 1.3
+    },
+    "s8037": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 1.9
+    },
+    "s8038": {
+        "max_thickness_percent": 13.0,
+        "max_camber_percent": 0.6
+    },
+    "s8052": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 1.2
+    },
+    "s8055": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.6
+    },
+    "s9000": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.1
+    },
+    "s9026": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 0.0
+    },
+    "s9027": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 0.0
+    },
+    "s9032": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 0.0
+    },
+    "s9033": {
+        "max_thickness_percent": 7.5,
+        "max_camber_percent": 0.0
+    },
+    "s9037": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 3.3
+    },
+    "sa7024": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 3.3
+    },
+    "sa7025": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 3.6
+    },
+    "sa7026": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 3.8
+    },
+    "sa7035": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 2.4
+    },
+    "sa7036": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 2.6
+    },
+    "sa7038": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 3.0
+    },
+    "saratov": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 9.8
+    },
+    "sc1012r8": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.7
+    },
+    "sc1094r8": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 2.1
+    },
+    "sc1095": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 0.8
+    },
+    "sc1095r8": {
+        "max_thickness_percent": 9.3,
+        "max_camber_percent": 2.1
+    },
+    "sc20010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 0.0
+    },
+    "sc20012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.0
+    },
+    "sc20402": {
+        "max_thickness_percent": 2.0,
+        "max_camber_percent": 0.5
+    },
+    "sc20403": {
+        "max_thickness_percent": 3.0,
+        "max_camber_percent": 0.6
+    },
+    "sc20404": {
+        "max_thickness_percent": 4.0,
+        "max_camber_percent": 0.7
+    },
+    "sc20406": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 0.6
+    },
+    "sc20410": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.1
+    },
+    "sc20412": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.3
+    },
+    "sc20414": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 1.5
+    },
+    "sc20503": {
+        "max_thickness_percent": 3.0,
+        "max_camber_percent": 0.8
+    },
+    "sc20518": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 1.9
+    },
+    "sc20606": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.3
+    },
+    "sc20610": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.8
+    },
+    "sc20612": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 1.9
+    },
+    "sc20614": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 2.1
+    },
+    "sc20706": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 1.6
+    },
+    "sc20710": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.1
+    },
+    "sc20712": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 2.2
+    },
+    "sc20714": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 2.5
+    },
+    "sc21006": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 2.6
+    },
+    "sc21010": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.8
+    },
+    "sc2110": {
+        "max_thickness_percent": 9.9,
+        "max_camber_percent": 1.9
+    },
+    "sd2030": {
+        "max_thickness_percent": 8.6,
+        "max_camber_percent": 2.2
+    },
+    "sd2083": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 2.5
+    },
+    "sd5060": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 2.0
+    },
+    "sd6060": {
+        "max_thickness_percent": 10.4,
+        "max_camber_percent": 1.6
+    },
+    "sd6080": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 3.2
+    },
+    "sd7003": {
+        "max_thickness_percent": 8.5,
+        "max_camber_percent": 1.2
+    },
+    "sd7032": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.4
+    },
+    "sd7034": {
+        "max_thickness_percent": 10.5,
+        "max_camber_percent": 3.6
+    },
+    "sd7037": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 2.5
+    },
+    "sd7043": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 3.3
+    },
+    "sd7062": {
+        "max_thickness_percent": 14.0,
+        "max_camber_percent": 3.5
+    },
+    "sd7080": {
+        "max_thickness_percent": 9.2,
+        "max_camber_percent": 2.1
+    },
+    "sd7084": {
+        "max_thickness_percent": 9.6,
+        "max_camber_percent": 2.3
+    },
+    "sd7090": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.5
+    },
+    "sd8000": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 1.5
+    },
+    "sd8020": {
+        "max_thickness_percent": 10.1,
+        "max_camber_percent": 0.0
+    },
+    "sd8040": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 2.1
+    },
+    "sg6040": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 2.3
+    },
+    "sg6041": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.6
+    },
+    "sg6042": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 3.3
+    },
+    "sg6043": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 5.1
+    },
+    "sg6050": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 3.1
+    },
+    "sg6051": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.1
+    },
+    "sm701": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 3.0
+    },
+    "sokolov": {
+        "max_thickness_percent": 7.1,
+        "max_camber_percent": 6.3
+    },
+    "spicasm": {
+        "max_thickness_percent": 11.7,
+        "max_camber_percent": 4.7
+    },
+    "ssca07": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 0.9
+    },
+    "ssca09": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.2
+    },
+    "stcyr171": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 1.5
+    },
+    "stcyr172": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 0.0
+    },
+    "stcyr234": {
+        "max_thickness_percent": 16.0,
+        "max_camber_percent": 5.1
+    },
+    "stcyr24": {
+        "max_thickness_percent": 12.4,
+        "max_camber_percent": 5.9
+    },
+    "ste87151": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 2.5
+    },
+    "ste87391": {
+        "max_thickness_percent": 14.6,
+        "max_camber_percent": 4.2
+    },
+    "stf86361": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 4.2
+    },
+    "strand": {
+        "max_thickness_percent": 15.4,
+        "max_camber_percent": 4.1
+    },
+    "tempest1": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 1.0
+    },
+    "tempest2": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 0.9
+    },
+    "tempest3": {
+        "max_thickness_percent": 10.0,
+        "max_camber_percent": 1.0
+    },
+    "th25816": {
+        "max_thickness_percent": 25.7,
+        "max_camber_percent": 4.0
+    },
+    "trainer60": {
+        "max_thickness_percent": 18.3,
+        "max_camber_percent": 0.1
+    },
+    "tsagi12": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 2.0
+    },
+    "tsagi8": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.3
+    },
+    "ua2-180": {
+        "max_thickness_percent": 18.1,
+        "max_camber_percent": 7.0
+    },
+    "ua2-180sm": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 6.5
+    },
+    "ua79sf18": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 3.7
+    },
+    "ua79sff": {
+        "max_thickness_percent": 8.7,
+        "max_camber_percent": 3.4
+    },
+    "ua79sfm": {
+        "max_thickness_percent": 18.8,
+        "max_camber_percent": 3.0
+    },
+    "uag8814320": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 6.2
+    },
+    "ui1720": {
+        "max_thickness_percent": 13.8,
+        "max_camber_percent": 4.6
+    },
+    "ultimate": {
+        "max_thickness_percent": 12.8,
+        "max_camber_percent": 0.0
+    },
+    "us1000root": {
+        "max_thickness_percent": 18.6,
+        "max_camber_percent": 0.0
+    },
+    "usa22": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 4.4
+    },
+    "usa25": {
+        "max_thickness_percent": 8.3,
+        "max_camber_percent": 5.2
+    },
+    "usa26": {
+        "max_thickness_percent": 9.8,
+        "max_camber_percent": 4.3
+    },
+    "usa27": {
+        "max_thickness_percent": 11.1,
+        "max_camber_percent": 5.1
+    },
+    "usa27m2": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 5.0
+    },
+    "usa28": {
+        "max_thickness_percent": 13.2,
+        "max_camber_percent": 3.8
+    },
+    "usa29": {
+        "max_thickness_percent": 13.2,
+        "max_camber_percent": 5.5
+    },
+    "usa31": {
+        "max_thickness_percent": 14.8,
+        "max_camber_percent": 9.3
+    },
+    "usa32": {
+        "max_thickness_percent": 14.7,
+        "max_camber_percent": 9.3
+    },
+    "usa33": {
+        "max_thickness_percent": 14.2,
+        "max_camber_percent": 4.9
+    },
+    "usa34": {
+        "max_thickness_percent": 18.0,
+        "max_camber_percent": 7.7
+    },
+    "usa35": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 6.4
+    },
+    "usa35a": {
+        "max_thickness_percent": 18.2,
+        "max_camber_percent": 6.4
+    },
+    "usa35b": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 4.1
+    },
+    "usa40": {
+        "max_thickness_percent": 13.3,
+        "max_camber_percent": 4.2
+    },
+    "usa40b": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 4.0
+    },
+    "usa41": {
+        "max_thickness_percent": 6.6,
+        "max_camber_percent": 4.5
+    },
+    "usa45": {
+        "max_thickness_percent": 14.5,
+        "max_camber_percent": 4.1
+    },
+    "usa45m": {
+        "max_thickness_percent": 11.6,
+        "max_camber_percent": 3.3
+    },
+    "usa46": {
+        "max_thickness_percent": 6.5,
+        "max_camber_percent": 2.2
+    },
+    "usa48": {
+        "max_thickness_percent": 14.9,
+        "max_camber_percent": 2.9
+    },
+    "usa49": {
+        "max_thickness_percent": 7.3,
+        "max_camber_percent": 1.7
+    },
+    "usa5": {
+        "max_thickness_percent": 6.4,
+        "max_camber_percent": 4.5
+    },
+    "usa50": {
+        "max_thickness_percent": 7.0,
+        "max_camber_percent": 2.0
+    },
+    "usa51": {
+        "max_thickness_percent": 9.3,
+        "max_camber_percent": 2.6
+    },
+    "usa98": {
+        "max_thickness_percent": 14.3,
+        "max_camber_percent": 6.4
+    },
+    "usnps4": {
+        "max_thickness_percent": 11.9,
+        "max_camber_percent": 5.0
+    },
+    "v13006": {
+        "max_thickness_percent": 6.0,
+        "max_camber_percent": 0.9
+    },
+    "v13009": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 1.3
+    },
+    "v23010": {
+        "max_thickness_percent": 10.2,
+        "max_camber_percent": 1.8
+    },
+    "v43012": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.7
+    },
+    "v43015": {
+        "max_thickness_percent": 15.0,
+        "max_camber_percent": 3.7
+    },
+    "vr1": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 1.5
+    },
+    "vr11x": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.4
+    },
+    "vr12": {
+        "max_thickness_percent": 10.6,
+        "max_camber_percent": 2.3
+    },
+    "vr13": {
+        "max_thickness_percent": 9.5,
+        "max_camber_percent": 2.0
+    },
+    "vr14": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.7
+    },
+    "vr15": {
+        "max_thickness_percent": 8.0,
+        "max_camber_percent": 1.3
+    },
+    "vr5": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.4
+    },
+    "vr7": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.1
+    },
+    "vr7b": {
+        "max_thickness_percent": 12.0,
+        "max_camber_percent": 3.0
+    },
+    "vr8": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 1.3
+    },
+    "vr8b": {
+        "max_thickness_percent": 8.2,
+        "max_camber_percent": 1.2
+    },
+    "vr9": {
+        "max_thickness_percent": 6.1,
+        "max_camber_percent": 0.3
+    },
+    "waspsm": {
+        "max_thickness_percent": 9.4,
+        "max_camber_percent": 3.0
+    },
+    "wb13535sm": {
+        "max_thickness_percent": 13.6,
+        "max_camber_percent": 3.8
+    },
+    "wb140": {
+        "max_thickness_percent": 13.9,
+        "max_camber_percent": 3.7
+    },
+    "whitcomb": {
+        "max_thickness_percent": 11.0,
+        "max_camber_percent": 2.4
+    },
+    "ys900": {
+        "max_thickness_percent": 9.0,
+        "max_camber_percent": 0.0
+    },
+    "ys915": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 1.8
+    },
+    "ys930": {
+        "max_thickness_percent": 9.1,
+        "max_camber_percent": 2.9
+    }
+}
