@@ -19,7 +19,7 @@ def main():
             properties.append([airfoil, clmax, ldmax])
         
     print("\nApplying moment filter...")
-    airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.15, 0.15)
+    airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.05, 0.05)
     
     print("\nFetching top 30 airfoils...")
     airfoils, properties = filter_top_clmax(airfoils, properties)
