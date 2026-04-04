@@ -12,10 +12,11 @@ def main():
     properties = []
     reynolds_number = 100000
     
-    for airfoil in search_airfoils_by_geometry(10, 15, 0, 8):
+    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10):
         (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
-        airfoils[airfoil] = alphas, cl , cd, cm
-        properties.append([airfoil, clmax, ldmax])
+        if alphas is not None:
+            airfoils[airfoil] = alphas, cl , cd, cm
+            properties.append([airfoil, clmax, ldmax])
         
     print("\nApplying moment filter...")
     airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.15, 0.15)
@@ -84,6 +85,7 @@ def plot_polars(airfoil_data_dict):
     fig.suptitle('Airfoil Aerodynamic Polars', fontsize=20, fontweight='bold')
     
     lines_by_airfoil = {name: [] for name in airfoil_data_dict.keys()}
+    airfoil_colors = {}
     
     for name, data in airfoil_data_dict.items():
         alpha, cl, cd, cm = data
@@ -91,33 +93,36 @@ def plot_polars(airfoil_data_dict):
         
         line, = axs[0, 0].plot(alpha, cl, label=name)
         lines_by_airfoil[name].append(line)
+        airfoil_colors[name] = line.get_color() 
+        
         axs[0, 0].set_title('Cl vs Alpha', fontsize=14)
         axs[0, 0].set_xlabel('Alpha (deg)')
         axs[0, 0].set_ylabel('Cl')
         axs[0, 0].grid(True)
         
-        line, = axs[0, 1].plot(alpha, cd, label=name)
+        # Apply the exact same color to the rest of the graphs to ensure consistency
+        line, = axs[0, 1].plot(alpha, cd, label=name, color=airfoil_colors[name])
         lines_by_airfoil[name].append(line)
         axs[0, 1].set_title('Cd vs Alpha', fontsize=14)
         axs[0, 1].set_xlabel('Alpha (deg)')
         axs[0, 1].set_ylabel('Cd')
         axs[0, 1].grid(True)
         
-        line, = axs[0, 2].plot(alpha, cm, label=name)
+        line, = axs[0, 2].plot(alpha, cm, label=name, color=airfoil_colors[name])
         lines_by_airfoil[name].append(line)
         axs[0, 2].set_title('Cm vs Alpha', fontsize=14)
         axs[0, 2].set_xlabel('Alpha (deg)')
         axs[0, 2].set_ylabel('Cm')
         axs[0, 2].grid(True)
         
-        line, = axs[1, 0].plot(alpha, ld, label=name)
+        line, = axs[1, 0].plot(alpha, ld, label=name, color=airfoil_colors[name])
         lines_by_airfoil[name].append(line)
         axs[1, 0].set_title('L/D vs Alpha', fontsize=14)
         axs[1, 0].set_xlabel('Alpha (deg)')
         axs[1, 0].set_ylabel('L/D')
         axs[1, 0].grid(True)
         
-        line, = axs[1, 1].plot(cd, cl, label=name)
+        line, = axs[1, 1].plot(cd, cl, label=name, color=airfoil_colors[name])
         lines_by_airfoil[name].append(line)
         axs[1, 1].set_title('Cl vs Cd (Drag Polar)', fontsize=14)
         axs[1, 1].set_xlabel('Cd')
@@ -125,7 +130,6 @@ def plot_polars(airfoil_data_dict):
         axs[1, 1].grid(True)
     
     axs[1, 2].axis('off')
-    
     plt.subplots_adjust(left=0.05, right=0.80, top=0.90, bottom=0.10, wspace=0.3, hspace=0.3)
     rax = fig.add_axes([0.82, 0.05, 0.16, 0.85]) 
     
@@ -133,8 +137,10 @@ def plot_polars(airfoil_data_dict):
     visibility = [True] * len(labels)
     check = CheckButtons(rax, labels, visibility)
 
-    for label in check.labels:
+    for i, label in enumerate(check.labels):
         label.set_fontsize(8)
+        label.set_color(airfoil_colors[labels[i]])
+        label.set_fontweight('bold')
 
     def toggle_lines(label):
         for line in lines_by_airfoil[label]:
