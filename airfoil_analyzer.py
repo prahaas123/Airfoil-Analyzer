@@ -79,6 +79,34 @@ def search_airfoils_by_geometry(min_thick=0.0, max_thick=66.4, min_camber=0.0, m
     except json.JSONDecodeError:
         print(f"[ERROR] '{json_filename}' is corrupted or not a valid JSON file.")
         return []
+    
+def search_airfoils_by_name(*search_terms, json_filename="airfoils.json"):
+    if not search_terms:
+        print("  -> No search terms provided.")
+        return []
+
+    print(f"Searching '{json_filename}' for terms: {', '.join(search_terms)}...")
+    matched_airfoils = []
+    terms_lower = [term.lower() for term in search_terms]
+    
+    try:
+        with open(json_filename, 'r', encoding='utf-8') as f:
+            airfoil_data = json.load(f)
+            
+        for name in airfoil_data.keys():
+            name_lower = name.lower()
+            if any(term in name_lower for term in terms_lower):
+                matched_airfoils.append(name)
+                
+        print(f"  -> Found {len(matched_airfoils)} airfoils matching the search terms.")
+        return matched_airfoils
+        
+    except FileNotFoundError:
+        print(f"[ERROR] Could not find '{json_filename}'. Please ensure the file exists in the current directory.")
+        return []
+    except json.JSONDecodeError:
+        print(f"[ERROR] '{json_filename}' is corrupted or not a valid JSON file.")
+        return []
 
 def plot_polars(airfoil_data_dict):
     fig, axs = plt.subplots(2, 3, figsize=(18, 10))
@@ -223,4 +251,16 @@ def filter_top_clmax(airfoils, properties, top_n= 30):
     return filtered_airfoils, top_properties
 
 if __name__ == "__main__":
-    main()
+    # main()
+    airfoils = {}
+    properties = []
+    reynolds_number = 100000
+    for airfoil in search_airfoils_by_name("mh", "pw"):
+        (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
+        if alphas is not None:
+            airfoils[airfoil] = alphas, cl , cd, cm
+            properties.append([airfoil, clmax, ldmax])
+        
+    print("Plotting airfoils. ----->")
+    plot_polars(airfoils)
+    plot_pareto_frontier(properties)
