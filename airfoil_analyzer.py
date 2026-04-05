@@ -4,31 +4,11 @@ import os
 import requests
 import re
 import json
+import streamlit as st
 import neuralfoil as nf
 import aerosandbox as asb
 import matplotlib.pyplot as plt
-from matplotlib.widgets import CheckButtons
-
-def main():
-    airfoils = {}
-    properties = []
-    reynolds_number = 100000
-    
-    for airfoil in search_airfoils_by_name("hq", "goe", "sd", "sg", "n-11", "clark", "ham"):
-        (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
-        if alphas is not None:
-            airfoils[airfoil] = alphas, cl , cd, cm
-            properties.append([airfoil, clmax, ldmax])
-        
-    # print("\nApplying moment filter...")
-    # airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.05, 0.05)
-    
-    print("\nFetching top 30 airfoils...")
-    airfoils, properties = filter_top_clmax(airfoils, properties)
-        
-    print("Plotting airfoils. ----->")
-    plot_polars(airfoils)
-    plot_pareto_frontier(properties)
+import matplotlib.colors as mcolors
 
 def fetch_af_polar(af_name, re_num):
     print(f"  -> COMPUTING: {af_name} at Re={re_num} using NeuralFoil...")
@@ -110,125 +90,6 @@ def search_airfoils_by_name(*search_terms, json_filename="airfoils.json"):
         print(f"[ERROR] '{json_filename}' is corrupted or not a valid JSON file.")
         return []
 
-def plot_polars(airfoil_data_dict):
-    fig, axs = plt.subplots(2, 3, figsize=(18, 10))
-    fig.suptitle('Airfoil Aerodynamic Polars', fontsize=20, fontweight='bold')
-    
-    lines_by_airfoil = {name: [] for name in airfoil_data_dict.keys()}
-    airfoil_colors = {}
-    
-    for name, data in airfoil_data_dict.items():
-        alpha, cl, cd, cm = data
-        ld = cl / cd 
-        
-        line, = axs[0, 0].plot(alpha, cl, label=name)
-        lines_by_airfoil[name].append(line)
-        airfoil_colors[name] = line.get_color() 
-        
-        axs[0, 0].set_title('Cl vs Alpha', fontsize=14)
-        axs[0, 0].set_xlabel('Alpha (deg)')
-        axs[0, 0].set_ylabel('Cl')
-        axs[0, 0].grid(True)
-        
-        # Apply the exact same color to the rest of the graphs to ensure consistency
-        line, = axs[0, 1].plot(alpha, cd, label=name, color=airfoil_colors[name])
-        lines_by_airfoil[name].append(line)
-        axs[0, 1].set_title('Cd vs Alpha', fontsize=14)
-        axs[0, 1].set_xlabel('Alpha (deg)')
-        axs[0, 1].set_ylabel('Cd')
-        axs[0, 1].grid(True)
-        
-        line, = axs[0, 2].plot(alpha, cm, label=name, color=airfoil_colors[name])
-        lines_by_airfoil[name].append(line)
-        axs[0, 2].set_title('Cm vs Alpha', fontsize=14)
-        axs[0, 2].set_xlabel('Alpha (deg)')
-        axs[0, 2].set_ylabel('Cm')
-        axs[0, 2].grid(True)
-        
-        line, = axs[1, 0].plot(alpha, ld, label=name, color=airfoil_colors[name])
-        lines_by_airfoil[name].append(line)
-        axs[1, 0].set_title('L/D vs Alpha', fontsize=14)
-        axs[1, 0].set_xlabel('Alpha (deg)')
-        axs[1, 0].set_ylabel('L/D')
-        axs[1, 0].grid(True)
-        
-        line, = axs[1, 1].plot(cd, cl, label=name, color=airfoil_colors[name])
-        lines_by_airfoil[name].append(line)
-        axs[1, 1].set_title('Cl vs Cd (Drag Polar)', fontsize=14)
-        axs[1, 1].set_xlabel('Cd')
-        axs[1, 1].set_ylabel('Cl')
-        axs[1, 1].grid(True)
-    
-    axs[1, 2].axis('off')
-    plt.subplots_adjust(left=0.05, right=0.80, top=0.90, bottom=0.10, wspace=0.3, hspace=0.3)
-    rax = fig.add_axes([0.82, 0.05, 0.16, 0.85]) 
-    
-    labels = list(airfoil_data_dict.keys())
-    visibility = [True] * len(labels)
-    check = CheckButtons(rax, labels, visibility)
-
-    for i, label in enumerate(check.labels):
-        label.set_fontsize(8)
-        label.set_color(airfoil_colors[labels[i]])
-        label.set_fontweight('bold')
-
-    def toggle_lines(label):
-        for line in lines_by_airfoil[label]:
-            line.set_visible(not line.get_visible())
-        fig.canvas.draw_idle()
-
-    check.on_clicked(toggle_lines)
-    plt.show()
-    
-    return check
-    
-def plot_pareto_frontier(airfoil_properties):
-    df = pd.DataFrame(airfoil_properties, columns=['Name', 'Cl_max', 'LD_max'])
-    df_sorted = df.sort_values(by=['LD_max', 'Cl_max'], ascending=[False, False]).reset_index(drop=True)
-    pareto_front = []
-    max_cl_seen = -np.inf
-    
-    for index, row in df_sorted.iterrows():
-        if row['Cl_max'] > max_cl_seen:
-            pareto_front.append(row)
-            max_cl_seen = row['Cl_max']
-            
-    pareto_df = pd.DataFrame(pareto_front)
-    plt.figure(figsize=(12, 8))
-    plt.scatter(df['LD_max'], df['Cl_max'], color='steelblue', alpha=0.5, s=50, label='Airfoils')
-    pareto_df = pareto_df.sort_values(by='LD_max') 
-    plt.plot(pareto_df['LD_max'], pareto_df['Cl_max'], color='crimson', marker='o', 
-             linestyle='-', linewidth=2, markersize=8, label='Pareto Front')
-    
-    for index, row in df.iterrows():
-        if row['Name'] in pareto_df['Name'].values:
-            plt.annotate(
-                row['Name'], 
-                (row['LD_max'], row['Cl_max']), 
-                xytext=(8, 5),
-                textcoords='offset points', 
-                fontsize=11, 
-                fontweight='bold',
-                color='darkred'
-            )
-        else:
-            plt.annotate(
-                row['Name'], 
-                (row['LD_max'], row['Cl_max']), 
-                xytext=(5, 5),
-                textcoords='offset points', 
-                fontsize=6, 
-                alpha=0.6, 
-                color='black'
-            )
-
-    plt.title('Airfoil Pareto Front: Lift vs. Efficiency', fontsize=18, fontweight='bold')
-    plt.xlabel('Maximum L/D Ratio (Efficiency)', fontsize=14)
-    plt.ylabel('Maximum Lift Coefficient ($C_{l,max}$)', fontsize=14)
-    plt.grid(True, linestyle='--', alpha=0.7)
-    plt.legend(fontsize=12, loc='lower right')
-    plt.show()
-    
 def filter_cm_at_alpha(airfoils, properties, target_alpha, min_cm, max_cm):
     passing_names = set()
     for name, (alphas, cl, cd, cm) in airfoils.items():
@@ -244,7 +105,7 @@ def filter_cm_at_alpha(airfoils, properties, target_alpha, min_cm, max_cm):
 
     return filtered_airfoils, filtered_properties
 
-def filter_top_clmax(airfoils, properties, top_n= 30):
+def filter_top_clmax(airfoils, properties, top_n= 100):
     sorted_properties = sorted(properties, key=lambda x: x[1], reverse=True)
     top_properties = sorted_properties[:top_n]
     top_names = {prop[0] for prop in top_properties}
@@ -252,28 +113,49 @@ def filter_top_clmax(airfoils, properties, top_n= 30):
     print(f"\n  -> Filtered down to the top {len(filtered_airfoils)} airfoils by Cl_max.")
     return filtered_airfoils, top_properties
 
-def fetch_and_parse_airfoil_coords(airfoil_name):
-    url = f"https://m-selig.ae.illinois.edu/ads/coord/{airfoil_name.lower()}.dat"
-    print(f"Fetching from: {url}")
+st.set_page_config(page_title="Airfoil Analyzer", layout="wide")
+st.title("✈️ Airfoil Aerodynamic Analyzer")
+
+# Data Fetching Functions (Cached)
+@st.cache_data
+def load_and_compute_data(reynolds_number=100000):
+    airfoils = {}
+    properties = []
+    reynolds_number = 100000
     
+    for airfoil in search_airfoils_by_name("hq", "goe", "sd", "sg", "n-11", "clark", "ham"):
+        (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
+        if alphas is not None:
+            airfoils[airfoil] = alphas, cl , cd, cm
+            properties.append([airfoil, clmax, ldmax])
+        
+    # print("\nApplying moment filter...")
+    # airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.05, 0.05)
+    
+    print("\nFetching top 30 airfoils...")
+    return filter_top_clmax(airfoils, properties)
+
+# Allow Streamlit's native cache spinner to handle the loading state
+@st.cache_data(show_spinner="Fetching geometry from UIUC...") 
+def fetch_and_parse_airfoil_coords(airfoil_name):
+    """Fetches and parses airfoil coordinates from the UIUC database."""
+    url = f"https://m-selig.ae.illinois.edu/ads/coord/{airfoil_name.lower()}.dat"
     try:
         response = requests.get(url)
-        response.raise_for_status() # Check for HTTP errors (e.g., 404)
+        response.raise_for_status() 
         
         lines = response.text.strip().splitlines()
         if not lines:
-            raise ValueError("Downloaded af file is empty.")
+            return None, None
             
-        # Skip the title line and any optional point count lines
         line_idx = 0
         while line_idx < len(lines):
             line = lines[line_idx].strip()
             if not line: 
                 line_idx += 1
                 break
-            # Check if the line contains exactly two float numbers (coordinates).
             if re.match(r"^\s*[-+]?\d*\.?\d+\s+[-+]?\d*\.?\d+\s*$", line):
-                break # We have reached the coordinates
+                break 
             line_idx += 1
 
         def parse_points_from_block(start_idx, end_idx):
@@ -281,14 +163,13 @@ def fetch_and_parse_airfoil_coords(airfoil_name):
             for i in range(start_idx, end_idx):
                 line = lines[i].strip()
                 if not line:
-                    break # Reached the surface separation (blank line)
+                    break 
                 parts = line.split()
                 if len(parts) == 2:
                     try:
-                        x, y = map(float, parts)
-                        coords.append([x, y])
+                        coords.append([float(parts[0]), float(parts[1])])
                     except ValueError:
-                        pass # Skip non-float data
+                        pass 
             return np.array(coords)
 
         gap_idx = -1
@@ -298,25 +179,152 @@ def fetch_and_parse_airfoil_coords(airfoil_name):
                 break
         
         if gap_idx == -1:
-            raise ValueError("Could not find the mandatory surface separation (blank line) in the file.")
+            return None, None
 
         upper_surface = parse_points_from_block(line_idx, gap_idx)
         lower_surface = parse_points_from_block(gap_idx + 1, len(lines))
         
         if len(upper_surface) == 0 or len(lower_surface) == 0:
-             raise ValueError("Parsed surfaces are incomplete.")
+             return None, None
 
-        print(f"Successfully parsed '{airfoil_name}': {len(upper_surface)} upper, {len(lower_surface)} lower points.")
         return upper_surface, lower_surface
 
-    except requests.exceptions.RequestException as e:
-        print(f"[Error] Network issue fetching {airfoil_name}: {e}")
-    except ValueError as e:
-        print(f"[Error] Parsing failed for {airfoil_name}: {e}")
-    except Exception as e:
-        print(f"[Error] Unexpected error with {airfoil_name}: {e}")
-        
-    return None, None
+    except Exception:
+        return None, None
 
-if __name__ == "__main__":
-    main()
+with st.spinner("Computing airfoil aerodynamics via NeuralFoil..."):
+    all_airfoils, all_properties = load_and_compute_data()
+
+# Setup consistent colors for the selected airfoils globally
+colors = plt.cm.turbo(np.linspace(0, 1, len(all_airfoils))) 
+color_map = {name: colors[i] for i, name in enumerate(all_airfoils.keys())}
+
+# SIDEBAR: Controls & Legend
+st.sidebar.header("Controls & Legend")
+selected_airfoils = st.sidebar.multiselect(
+    "Select Airfoils to Display",
+    options=list(all_airfoils.keys()),
+    default=list(all_airfoils.keys()) 
+)
+
+# Generate a custom HTML legend in the sidebar
+st.sidebar.markdown("### Color Key")
+legend_html = "<div style='display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;'>"
+for af_name in selected_airfoils:
+    # Convert the Matplotlib RGBA color to a Hex code for HTML rendering
+    color_hex = mcolors.to_hex(color_map[af_name])
+    legend_html += f"<div style='display: flex; align-items: center;'><div style='width: 18px; height: 18px; background-color: {color_hex}; border-radius: 4px; margin-right: 10px; border: 1px solid rgba(255,255,255,0.2);'></div><span style='font-size: 15px; font-weight: 500;'>{af_name.upper()}</span></div>"
+
+legend_html += "</div>"
+st.sidebar.markdown(legend_html, unsafe_allow_html=True)
+
+# Filter data based on selection
+filtered_airfoils = {k: v for k, v in all_airfoils.items() if k in selected_airfoils}
+filtered_properties = [p for p in all_properties if p[0] in selected_airfoils]
+
+# Main Layout: Split screen into two halves
+left_half, right_half = st.columns(2, gap="large")
+
+# LEFT HALF: Plots
+with left_half:
+    st.header("Aerodynamic Polars")
+    
+    def create_polar_plot(x_data, y_data, title, xlabel, ylabel):
+        fig, ax = plt.subplots(figsize=(4, 3)) 
+        for name, data in filtered_airfoils.items():
+            alpha, cl, cd, cm = data
+            ld = cl / cd
+            
+            x = locals()[x_data]
+            y = locals()[y_data]
+            
+            ax.plot(x, y, label=name, color=color_map[name])
+            
+        ax.set_title(title, fontsize=10)
+        ax.set_xlabel(xlabel, fontsize=9)
+        ax.set_ylabel(ylabel, fontsize=9)
+        ax.tick_params(axis='both', which='major', labelsize=8)
+        ax.grid(True, linestyle='--', alpha=0.7)
+        return fig
+
+    if filtered_airfoils:
+        polar_col1, polar_col2 = st.columns(2)
+        
+        with polar_col1:
+            st.pyplot(create_polar_plot('alpha', 'cl', 'Cl vs Alpha', 'Alpha (deg)', 'Cl'))
+            st.pyplot(create_polar_plot('alpha', 'cm', 'Cm vs Alpha', 'Alpha (deg)', 'Cm'))
+            st.pyplot(create_polar_plot('cd', 'cl', 'Drag Polar (Cl vs Cd)', 'Cd', 'Cl'))
+            
+        with polar_col2:
+            st.pyplot(create_polar_plot('alpha', 'cd', 'Cd vs Alpha', 'Alpha (deg)', 'Cd'))
+            st.pyplot(create_polar_plot('alpha', 'ld', 'L/D vs Alpha', 'Alpha (deg)', 'L/D'))
+    else:
+        st.info("Please select at least one airfoil from the sidebar.")
+
+    st.divider()
+
+    st.header("Pareto Front: Lift vs. Efficiency")
+
+    if filtered_properties:
+        df = pd.DataFrame(filtered_properties, columns=['Name', 'Cl_max', 'LD_max'])
+        df_sorted = df.sort_values(by=['LD_max', 'Cl_max'], ascending=[False, False]).reset_index(drop=True)
+        
+        pareto_front = []
+        max_cl_seen = -np.inf
+        for index, row in df_sorted.iterrows():
+            if row['Cl_max'] > max_cl_seen:
+                pareto_front.append(row)
+                max_cl_seen = row['Cl_max']
+                
+        pareto_df = pd.DataFrame(pareto_front).sort_values(by='LD_max')
+        
+        fig_pareto, ax_pareto = plt.subplots(figsize=(8, 5))
+        
+        ax_pareto.scatter(df['LD_max'], df['Cl_max'], color='steelblue', alpha=0.5, s=50, label='Airfoils')
+        ax_pareto.plot(pareto_df['LD_max'], pareto_df['Cl_max'], color='crimson', marker='o', 
+                 linestyle='-', linewidth=2, markersize=8, label='Pareto Front')
+        
+        for index, row in df.iterrows():
+            ax_pareto.annotate(row['Name'], (row['LD_max'], row['Cl_max']), 
+                               xytext=(5, 5), textcoords='offset points', fontsize=9)
+
+        ax_pareto.set_xlabel('Maximum L/D Ratio (Efficiency)')
+        ax_pareto.set_ylabel('Maximum Lift Coefficient (Cl_max)')
+        ax_pareto.grid(True, linestyle='--', alpha=0.7)
+        ax_pareto.legend()
+        
+        st.pyplot(fig_pareto)
+
+# RIGHT HALF: Airfoil Geometry
+with right_half:
+    st.header("Airfoil Geometry Profiles")
+    
+    if not selected_airfoils:
+        st.info("Select airfoils to view their physical geometry.")
+    else:
+        for af_name in selected_airfoils:
+            upper, lower = fetch_and_parse_airfoil_coords(af_name)
+            
+            if upper is not None and lower is not None:
+                fig_geo, ax_geo = plt.subplots(figsize=(6, 1.5))
+                
+                ax_geo.plot(upper[:, 0], upper[:, 1], color=color_map[af_name], linewidth=1.5)
+                ax_geo.plot(lower[:, 0], lower[:, 1], color=color_map[af_name], linewidth=1.5)
+                
+                ax_geo.fill(
+                    np.append(upper[:, 0], lower[::-1, 0]),
+                    np.append(upper[:, 1], lower[::-1, 1]),
+                    color=color_map[af_name], alpha=0.2
+                )
+                
+                ax_geo.axis('equal') 
+                
+                ax_geo.set_title(f"{af_name.upper()}", fontsize=12, fontweight='bold', color=color_map[af_name])
+                ax_geo.grid(True, linestyle=':', alpha=0.6)
+                
+                ax_geo.set_xticks([])
+                ax_geo.set_yticks([])
+                
+                st.pyplot(fig_geo)
+            else:
+                st.warning(f"Could not retrieve coordinate data for '{af_name}' from the UIUC database.")

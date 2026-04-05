@@ -1,0 +1,1 @@
+streamlit run "airfoil_analyzer.py"
