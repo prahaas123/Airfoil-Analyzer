@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import os
+import requests
+import re
 import json
 import neuralfoil as nf
 import aerosandbox as asb
@@ -12,14 +14,14 @@ def main():
     properties = []
     reynolds_number = 100000
     
-    for airfoil in search_airfoils_by_geometry(10, 15, 0, 10):
+    for airfoil in search_airfoils_by_name("hq", "goe", "sd", "sg", "n-11", "clark", "ham"):
         (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
         if alphas is not None:
             airfoils[airfoil] = alphas, cl , cd, cm
             properties.append([airfoil, clmax, ldmax])
         
-    print("\nApplying moment filter...")
-    airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.05, 0.05)
+    # print("\nApplying moment filter...")
+    # airfoils, properties = filter_cm_at_alpha(airfoils, properties, 3.0, -0.05, 0.05)
     
     print("\nFetching top 30 airfoils...")
     airfoils, properties = filter_top_clmax(airfoils, properties)
@@ -249,6 +251,72 @@ def filter_top_clmax(airfoils, properties, top_n= 30):
     filtered_airfoils = {name: data for name, data in airfoils.items() if name in top_names}
     print(f"\n  -> Filtered down to the top {len(filtered_airfoils)} airfoils by Cl_max.")
     return filtered_airfoils, top_properties
+
+def fetch_and_parse_airfoil_coords(airfoil_name):
+    url = f"https://m-selig.ae.illinois.edu/ads/coord/{airfoil_name.lower()}.dat"
+    print(f"Fetching from: {url}")
+    
+    try:
+        response = requests.get(url)
+        response.raise_for_status() # Check for HTTP errors (e.g., 404)
+        
+        lines = response.text.strip().splitlines()
+        if not lines:
+            raise ValueError("Downloaded af file is empty.")
+            
+        # Skip the title line and any optional point count lines
+        line_idx = 0
+        while line_idx < len(lines):
+            line = lines[line_idx].strip()
+            if not line: 
+                line_idx += 1
+                break
+            # Check if the line contains exactly two float numbers (coordinates).
+            if re.match(r"^\s*[-+]?\d*\.?\d+\s+[-+]?\d*\.?\d+\s*$", line):
+                break # We have reached the coordinates
+            line_idx += 1
+
+        def parse_points_from_block(start_idx, end_idx):
+            coords = []
+            for i in range(start_idx, end_idx):
+                line = lines[i].strip()
+                if not line:
+                    break # Reached the surface separation (blank line)
+                parts = line.split()
+                if len(parts) == 2:
+                    try:
+                        x, y = map(float, parts)
+                        coords.append([x, y])
+                    except ValueError:
+                        pass # Skip non-float data
+            return np.array(coords)
+
+        gap_idx = -1
+        for i in range(line_idx, len(lines)):
+            if not lines[i].strip():
+                gap_idx = i
+                break
+        
+        if gap_idx == -1:
+            raise ValueError("Could not find the mandatory surface separation (blank line) in the file.")
+
+        upper_surface = parse_points_from_block(line_idx, gap_idx)
+        lower_surface = parse_points_from_block(gap_idx + 1, len(lines))
+        
+        if len(upper_surface) == 0 or len(lower_surface) == 0:
+             raise ValueError("Parsed surfaces are incomplete.")
+
+        print(f"Successfully parsed '{airfoil_name}': {len(upper_surface)} upper, {len(lower_surface)} lower points.")
+        return upper_surface, lower_surface
+
+    except requests.exceptions.RequestException as e:
+        print(f"[Error] Network issue fetching {airfoil_name}: {e}")
+    except ValueError as e:
+        print(f"[Error] Parsing failed for {airfoil_name}: {e}")
+    except Exception as e:
+        print(f"[Error] Unexpected error with {airfoil_name}: {e}")
+        
+    return None, None
 
 if __name__ == "__main__":
     main()
