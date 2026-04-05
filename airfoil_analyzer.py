@@ -12,7 +12,7 @@ def main():
     properties = []
     reynolds_number = 100000
     
-    for airfoil in search_airfoils_by_geometry(5, 15, 0, 10):
+    for airfoil in search_airfoils_by_geometry(10, 15, 0, 10):
         (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
         if alphas is not None:
             airfoils[airfoil] = alphas, cl , cd, cm
@@ -251,16 +251,4 @@ def filter_top_clmax(airfoils, properties, top_n= 30):
     return filtered_airfoils, top_properties
 
 if __name__ == "__main__":
-    # main()
-    airfoils = {}
-    properties = []
-    reynolds_number = 100000
-    for airfoil in search_airfoils_by_name("mh", "pw"):
-        (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
-        if alphas is not None:
-            airfoils[airfoil] = alphas, cl , cd, cm
-            properties.append([airfoil, clmax, ldmax])
-        
-    print("Plotting airfoils. ----->")
-    plot_polars(airfoils)
-    plot_pareto_frontier(properties)
+    main()
