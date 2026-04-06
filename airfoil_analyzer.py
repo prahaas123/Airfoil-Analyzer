@@ -114,7 +114,7 @@ def filter_top_clmax(airfoils, properties, top_n= 100):
     return filtered_airfoils, top_properties
 
 st.set_page_config(page_title="Airfoil Analyzer", layout="wide")
-st.title("✈️ Airfoil Aerodynamic Analyzer")
+st.title("Airfoil Analyzer")
 
 # Data Fetching Functions (Cached)
 @st.cache_data
@@ -201,22 +201,25 @@ color_map = {name: colors[i] for i, name in enumerate(all_airfoils.keys())}
 
 # SIDEBAR: Controls & Legend
 st.sidebar.header("Controls & Legend")
-selected_airfoils = st.sidebar.multiselect(
-    "Select Airfoils to Display",
-    options=list(all_airfoils.keys()),
-    default=list(all_airfoils.keys()) 
-)
 
-# Generate a custom HTML legend in the sidebar
-st.sidebar.markdown("### Color Key")
-legend_html = "<div style='display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;'>"
-for af_name in selected_airfoils:
-    # Convert the Matplotlib RGBA color to a Hex code for HTML rendering
+selected_airfoils = []
+st.sidebar.markdown("### Airfoil Selection")
+
+# Loop through all available airfoils
+for af_name in all_airfoils.keys():
+    # Create two columns in the sidebar: a small one for the color, a larger one for the checkbox
+    col_color, col_check = st.sidebar.columns([1, 6])
+    
     color_hex = mcolors.to_hex(color_map[af_name])
-    legend_html += f"<div style='display: flex; align-items: center;'><div style='width: 18px; height: 18px; background-color: {color_hex}; border-radius: 4px; margin-right: 10px; border: 1px solid rgba(255,255,255,0.2);'></div><span style='font-size: 15px; font-weight: 500;'>{af_name.upper()}</span></div>"
-
-legend_html += "</div>"
-st.sidebar.markdown(legend_html, unsafe_allow_html=True)
+    
+    with col_color:
+        # Draw the colored square. 'margin-top' pushes it down slightly to vertically align with the checkbox text.
+        st.markdown(f"<div style='width: 18px; height: 18px; background-color: {color_hex}; border-radius: 4px; margin-top: 8px; border: 1px solid rgba(255,255,255,0.2);'></div>", unsafe_allow_html=True)
+        
+    with col_check:
+        # If the checkbox is checked, add it to our active list
+        if st.checkbox(af_name.upper(), value=True, key=f"chk_{af_name}"):
+            selected_airfoils.append(af_name)
 
 # Filter data based on selection
 filtered_airfoils = {k: v for k, v in all_airfoils.items() if k in selected_airfoils}
