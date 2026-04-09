@@ -1,6 +1,6 @@
-# ✈️ Airfoil Analyzer Dashboard
+# Airfoil Analyzer Dashboard
 
-An interactive web dashboard built with Streamlit that computes airfoil polars locally using [NeuralFoil](https://github.com/peterdsharpe/NeuralFoil).
+An interactive web dashboard built with Dash (Plotly) that computes airfoil polars locally using [NeuralFoil](https://github.com/peterdsharpe/NeuralFoil).
 
 ## How it Works
 
