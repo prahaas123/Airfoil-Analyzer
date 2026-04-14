@@ -113,13 +113,12 @@ def filter_top_clmax(airfoils, properties, top_n=100):
 def load_and_compute_data(reynolds_number=100000):
     airfoils = {}
     properties = []
-    for airfoil in search_airfoils_by_name("hq", "goe", "sd", "sg", "n-11", "clark", "ham"):
+    for airfoil in search_airfoils_by_geometry(5.0, 15.0, 0.0, 15.0):
         (alphas, cl, cd, cm), (clmax, ldmax) = fetch_af_polar(airfoil, reynolds_number)
         if alphas is not None:
             airfoils[airfoil] = (alphas, cl, cd, cm)
             properties.append([airfoil, clmax, ldmax])
-    print("\nFetching top 30 airfoils...")
-    return filter_top_clmax(airfoils, properties)
+    return filter_top_clmax(airfoils, properties, 30)
 
 
 @functools.lru_cache(maxsize=None)
@@ -315,10 +314,8 @@ def build_geo_panel():
 
 app.layout = dbc.Container([
     dbc.Row([
-        # ── Sidebar ──────────────────────────────────────────────────────────
         dbc.Col(build_sidebar(), width=1, style={"padding": "0"}),
 
-        # ── Main content ─────────────────────────────────────────────────────
         dbc.Col([
             html.H2("Airfoil Analyzer", className="my-3"),
             dbc.Row([
@@ -351,9 +348,7 @@ app.layout = dbc.Container([
     ], className="g-0"),
 ], fluid=True, style={"padding": "0"})
 
-
-# ─── Callbacks ────────────────────────────────────────────────────────────────
-
+# Callbacks
 def _get_selected(values_list):
     selected = []
     for v in values_list:
@@ -425,8 +420,6 @@ def _make_pareto_fig(selected):
     )
     return fig
 
-
-# Polar + pareto: fast, only touches in-memory numpy arrays
 @app.callback(
     Output("plot-cl-alpha",   "figure"),
     Output("plot-cd-alpha",   "figure"),
@@ -447,8 +440,6 @@ def update_plots(values_list):
         _make_pareto_fig(selected),
     )
 
-
-# Geometry: just flips display:block / display:none — nothing is rebuilt
 @app.callback(
     Output({"type": "geo-wrapper", "index": ALL}, "style"),
     Input({"type": "airfoil-check", "index": ALL}, "value"),
@@ -460,8 +451,5 @@ def update_geometry_visibility(values_list):
         for name in all_airfoils.keys()
     ]
 
-
-# ─── Entry point ──────────────────────────────────────────────────────────────
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
