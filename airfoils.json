@@ -5247,6 +5247,14 @@
         "max_thickness_percent": 11.6,
         "max_camber_percent": 2.9
     },
+    "pw51": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 1.4
+    },
+    "pw75": {
+        "max_thickness_percent": 8.9,
+        "max_camber_percent": 1.5
+    },
     "r1046": {
         "max_thickness_percent": 18.1,
         "max_camber_percent": 6.7
